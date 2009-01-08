@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<recipes>
+
+  <category name="Rice and Pasta">
+    <item>Penne Pasta</item>
+    <item>Basmati Rice</item>
+    <item>Rice</item>
+    <item>Macaroni</item>
+  </category>
+  <category name="Baking">
+    <item>Bread</item>
+    <item>Low Fat Cooking Spray</item>
+    <item>Sunflower Oil</item>
+    <item>Polyunsaturated Margarine</item>
+    <item>Sunflower Margarine</item>
+    <item>Salt and Pepper</item>
+    <item>Vegetable Stock</item>
+    <item>Flaked Almonds</item>
+    <item>Plain Flour</item>
+    <item>Dijon Mustard</item>
+    <item>Whole-Grain Mustard</item>
+    <item>Mild curry paste</item>
+  </category>
+  <category name="Dairy">
+    <item>Milk</item>
+    <item>Eggs</item>
+    <item>Soft Goats Cheese</item>
+    <item>Low Fat Mature Cheddar Cheese</item>
+    <item>Low Fat Cheddar Cheese</item>
+    <item>Skimmed Milk</item>
+    <item>Natural Bio-yogurt</item>
+    <item>Greek Yogurt</item>
+    <item>Veggie Parmesan</item>
+  </category>
+  <category name="Fruit and Veg">
+    <item>Fruit</item>
+    <item>Butternut Squash</item>
+    <item>Swede</item>
+    <item>Parsnips</item>
+    <item>Mushrooms</item>
+    <item>Prunes</item>
+    <item>Raisins</item>
+    <item>Aubergine</item>
+    <item>Carrots</item>
+    <item>Onion</item>
+    <item>Leeks</item>
+    <item>Cherry Tomatoes</item>
+  </category>
+  <category name="Herbs and Spices">
+    <item>Root Ginger</item>
+    <item>Thyme Leaves</item>
+    <item>Fresh Coriander</item>
+    <item>Garlic Clove</item>
+    <item>Sage Leaves</item>
+    <item>Bay Leaves</item>
+  </category>
+  <category name="Drinks">
+    <item>Dry Cider</item>
+  </category>
+
+  <regularItem>Bread</regularItem>
+  <regularItem>Milk</regularItem>
+  <regularItem>Eggs</regularItem>
+  <regularItem>Fruit</regularItem>
+
+  <recipe>
+    <name>WeightWatchers Butternut Squash and Goats Cheese Penne</name>
+    <source>Page 28 of WeightWatchers Cook!</source>
+    <portions>1</portions>
+    <points>4</points>
+    <prepAndCookingTime>15 minutes</prepAndCookingTime>
+    <ingredient amount="50" units="g" nameInShops="Penne Pasta">Dried Penne Pasta</ingredient>
+    <ingredient amount="150" units="g" nameInShops="Butternut Squash">Butternut Squash, peeled, deseeded and chopped into bite size pieces</ingredient>
+    <ingredient amount="3" nameInShops="Sage Leaves">Sage Leaves, shredded</ingredient>
+    <ingredient amount="25" units="g" nameInShops="Soft Goats Cheese">Soft Goats Cheese, crumbled</ingredient>
+    <ingredient amount="1" nameInShops="Garlic Clove">Garlic Clove, sliced</ingredient>
+    <ingredient amount="1" units=" squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="1" units=" pinch">Salt and Pepper</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Spicy Pilaf</name>
+    <source>Page 14 of the little green WeightWatchers Vegetarian cooking book</source>
+    <portions>4</portions>
+    <points>7.5</points>
+    <prepAndCookingTime>35 minutes</prepAndCookingTime>
+    <ingredient amount="2" units="tbsp">Sunflower Oil</ingredient>
+    <ingredient amount="1" nameInShops="Onion">Onion, chopped</ingredient>
+    <ingredient amount="2" nameInShops="Garlic Clove">Garlic Cloves, crushed</ingredient>
+    <ingredient amount="2" units="tsp" nameInShops="Root Ginger">grated root ginger</ingredient>
+    <ingredient amount="1" nameInShops="Carrots">carrot, chopped</ingredient>
+    <ingredient amount="1" nameInShops="Aubergine">aubergine, chopped</ingredient>
+    <ingredient amount="3" units="tbsp">Mild curry paste</ingredient>
+    <ingredient amount="240" units="g" nameInShops="Basmati Rice">White basmati rice</ingredient>
+    <ingredient amount="750" units="ml">Vegetable Stock</ingredient>
+    <ingredient amount="60" units="g" >Raisins</ingredient>
+    <ingredient amount="60" units="g">Flaked Almonds</ingredient>
+    <ingredient amount="3" units="tbsp">Fresh Coriander</ingredient>
+    <ingredient amount="300" units="ml">Natural Bio-yogurt</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Parsnip and Prune Casserole</name>
+    <source>Page 24 of the little green WeightWatchers Vegetarian cooking book</source>
+    <portions>4</portions>
+    <points>7</points>
+    <prepAndCookingTime>40 minutes</prepAndCookingTime>
+    <ingredient amount="4" units="tsp">Sunflower Margarine</ingredient>
+    <ingredient amount="1">Onion</ingredient>
+    <ingredient amount="1">Leeks</ingredient>
+    <ingredient amount="300" units="g" nameInShops="Parsnips">Parsnips, chopped</ingredient>
+    <ingredient amount="240" units="g" nameInShops="Carrots">Carrots, sliced</ingredient>
+    <ingredient amount="240" units="g" nameInShops="Swede">Swede, chopped</ingredient>
+    <ingredient amount="30" units="g">Plain Flour</ingredient>
+    <ingredient amount="150" units="ml">Dry Cider</ingredient>
+    <ingredient amount="600" units="ml">Vegetable Stock</ingredient>
+    <ingredient amount="2">Bay Leaves</ingredient>
+    <ingredient amount="120" units="g">Prunes</ingredient>
+    <ingredient amount="150" units="ml">Greek Yogurt</ingredient>
+    <ingredient amount="2" units="tsp" nameInShops="Sage Leaves">Fresh Sage</ingredient>
+    <ingredient amount="240" units="g">Rice</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Macaroni Cheese</name>
+    <source>Page 100 of WeightWatchers "CookEatEnjoy"</source>
+    <portions>2</portions>
+    <points>7</points>
+    <prepAndCookingTime>30 minutes</prepAndCookingTime>
+    <ingredient amount="125" units="g">Macaroni</ingredient>
+    <ingredient amount="25" units="g" nameInShops="Polyunsaturated Margarine">Low Fat Polyunsaturated Margarine</ingredient>
+    <ingredient amount="25" units="g">Plain Flour</ingredient>
+    <ingredient amount="150" units="ml">Vegetable Stock</ingredient>
+    <ingredient amount="150" units="ml">Skimmed Milk</ingredient>
+    <ingredient amount="1" units=" pinch">Salt and Pepper</ingredient>
+    <ingredient amount="0.5" units="tsp">Dijon Mustard</ingredient>
+    <ingredient amount="40" units="g" nameInShops="Low Fat Cheddar Cheese">Mature Half Fat Cheddar Cheese, grated</ingredient>
+    <ingredient amount="1" units="tsp">Thyme Leaves</ingredient>
+    <ingredient amount="6" nameInShops="Cherry Tomatoes">Cherry Tomatoes, Halved</ingredient>
+    <ingredient amount="2" units="tsp" nameInShops="Veggie Parmesan">Veggie Parmesan, grated</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Leek and Mushroom Pie</name>
+    <source>Page 82 of WeightWatchers "CookEatEnjoy"</source>
+    <portions>4</portions>
+    <points>7</points>
+    <prepAndCookingTime>65 minutes</prepAndCookingTime>
+    <ingredient amount="150" units="g" nameInShops="Plain Flour">Plain Flour and 1 tsp for rolling (for the Pastry)</ingredient>
+    <ingredient amount="1" units=" pinch" nameInShops="Salt and Pepper">Salt and Pepper (for the Pastry)</ingredient>
+    <ingredient amount="80" units="g" nameInShops="Polyunsaturated Margarine">Low Fat Polyunsaturated Margarine (for the Pastry)</ingredient>
+    <ingredient amount="15" units="g" nameInShops="Veggie Parmesan">Veggie Parmesan, grated (for the Pastry)</ingredient>
+    <ingredient amount="1" units="tbsp" nameInShops="Thyme Leaves">Freshly chopped Thyme (for the Pastry)</ingredient>
+    <ingredient amount="50" units="g" nameInShops="Polyunsaturated Margarine">Low Fat Polyunsaturated Margarine (for the Filling)</ingredient>
+    <ingredient amount="4" nameInShops="Leeks">Leeks (for the Filling)</ingredient>
+    <ingredient amount="300" units="ml" nameInShops="Vegetable Stock">Vegetable Stock (for the Filling)</ingredient>
+    <ingredient amount="40" units="g" nameInShops="Plain Flour">Plain Flour (for the Filling)</ingredient>
+    <ingredient amount="300" units="ml" nameInShops="Skimmed Milk">Skimmed Milk (for the Filling)</ingredient>
+    <ingredient amount="450" units="g" nameInShops="Mushrooms">Mushrooms, quartered (for the Filling)</ingredient>
+    <ingredient amount="1" units="tbsp" nameInShops="Whole-Grain Mustard">Whole-Grain Mustard (for the Filling)</ingredient>
+  </recipe>
+</recipes>
