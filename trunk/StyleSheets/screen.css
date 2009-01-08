@@ -1,0 +1,33 @@
+body {
+  margin: 30px;
+  font-family: Arial,sans-serif;
+}
+
+h1,h3 {
+  color: #8DC63F;
+}
+
+h4 {
+  margin: 0px;
+  color: #8DC63F;
+}
+
+img {
+  border: 0;
+}
+
+.recipe {
+  padding: 5px;
+  border: 1px solid #999;
+  margin: 5px;
+}
+
+.category {
+  margin-top: 15px;
+}
+
+#ShoppingList {
+  padding: 10px;
+  background: #FFF;
+  margin: 10px;
+}
