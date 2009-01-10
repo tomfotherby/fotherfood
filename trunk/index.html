@@ -1,32 +1,56 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
+    Fotherfood shopping list generator
+    Copyright (C) 2008-2009  Tom Fotherby
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+_____________________________
+
 Author: Tom Fotherby
-Version: FotherFood v0.2 (14/Nov/2008)
+Version: FotherFood v0.2 (10/Jan/2009)
 Softwara License: GNU General Public License v3+
 
 Feature List:
-   1. Buttons to add recipes to the shopping list (intial list of X recipes).
-   2. Buttons to add regular shopping items to the shopping list (e.g. milk, bread, eggs, etc).
-   3. Tracks the number of portions of each recipe in the shopping list.
-   4. Each recipe has a "More Info" drop-down icon to display recipe details.
-   5. Identical ingredients are summed together in the shopping list
-   6. The shopping list is sorted alphabetically by ingredients and by category of the ingredient (e.g. baking, fruit, etc).
-   7. Print mode - Only shows what's in the shopping list (not every recipe). 
-   8. Recipes are read from a XML file which means no source code needs to be edited when adding new recipes.
+   1. List of X recipes
+   2. Buttons to add recipes to a shopping list.
+   3. Buttons to add regular shopping items to the shopping list (e.g. milk, bread, eggs, etc).
+   4. Tracks the number of portions of each recipe in the shopping list.
+   5. Each recipe has a "More Info" drop-down icon to display recipe details.
+   6. Identical ingredients are summed together in the shopping list
+   7. The shopping list is sorted alphabetically by ingredients and by category of the ingredient (e.g. baking, fruit, etc).
+   8. Print mode - Only shows what's in the current shopping list (not every recipe). 
+
+Technical Details:
+   1. Free software (Affero General Public License)
+   2. Written in Javascript (plus HTML,CSS and XML obviously)
+   3. Recipes are read from a XML file which means no source code needs to be edited when adding new recipes.
 
 ToDo List: 
- * Ignore some things, such as "water".
- * Work out how to do Eggs as a regular item and Egg as an ingredient.
+ * Allow to ignore some ingredients in the shopping list. E.g. "water".
+ * Work out how to do Eggs as a regular item and Eggs as an ingredient.
  * Work out prep+cooking and prep&cooking time.
- * Work out optional ingredients: Coriander in Spicy Spinach Cannelloni.
- * Work out how to do a "light" version of a product. e.g. light condensed milk.
- * Work out how to do alternative ingredients.
- * Have a Tesco Express CSS - No titles, no units
- * Have Dessert section.
- * Include a pic of each recipe
- * Give each recipe a price 
- * Have method for searching for quick recipes or cheap recipes
- * Link with Tesco.com to automatically add to shopping basket
+ * Allow optional ingredients: Coriander in Spicy Spinach Cannelloni.
+ * Work out how to do a "light" version of a item. e.g. light condensed milk.
+ * Work out how to do alternative ingredients. E.g. Tagliatelle instead of Bucatini in Mushroom Carbonara.
+ * Break recipies into a Main and Dessert section.
+ * For Future releases:
+  * Have a Tesco Express CSS - No titles, no units
+  * Include a pic of each recipe
+  * Give each recipe a price 
+  * Have method for searching for quick recipes or cheap recipes
+  * Link with Tesco.com to automatically add to shopping basket
 -->
 
 <html>
