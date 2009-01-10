@@ -6,6 +6,9 @@
     <item>Basmati Rice</item>
     <item>Rice</item>
     <item>Macaroni</item>
+    <item>Dried Bucatini</item>
+    <item>Cannelloni Tubes</item>
+    <item>Gnocchi</item>
   </category>
   <category name="Baking">
     <item>Bread</item>
@@ -20,6 +23,11 @@
     <item>Dijon Mustard</item>
     <item>Whole-Grain Mustard</item>
     <item>Mild curry paste</item>
+    <item>Egg</item>
+    <item>Cornflour</item>
+    <item>Ready Rolled Puff Pastry</item>
+    <item>Pine Nuts</item>
+    <item>Vanilla Extract</item>
   </category>
   <category name="Dairy">
     <item>Milk</item>
@@ -31,6 +39,11 @@
     <item>Natural Bio-yogurt</item>
     <item>Greek Yogurt</item>
     <item>Veggie Parmesan</item>
+    <item>Quark</item>
+    <item>Low Fat Soft Cheese with Garlic and Herbs</item>
+    <item>Reduced Fat Onion and Chive Cottage Cheese</item>
+    <item>Light Condensed Milk</item>
+    <item>Low Fat Double Cream</item>
   </category>
   <category name="Fruit and Veg">
     <item>Fruit</item>
@@ -38,24 +51,51 @@
     <item>Swede</item>
     <item>Parsnips</item>
     <item>Mushrooms</item>
+    <item>Baby Portobelleo Mushrooms</item>
+    <item>Dried Porcini Mushrooms</item>
     <item>Prunes</item>
     <item>Raisins</item>
     <item>Aubergine</item>
     <item>Carrots</item>
     <item>Onion</item>
+    <item>Red Onion</item>
     <item>Leeks</item>
     <item>Cherry Tomatoes</item>
+    <item>Red Chilli</item>
+    <item>Red Pepper</item>
+    <item>Spinach</item>
+    <item>Courgette</item>
+    <item>Tomatoes</item>
+    <item>New Potatoes</item>
+    <item>Plums</item>
+    <item>Limes</item>
   </category>
   <category name="Herbs and Spices">
     <item>Root Ginger</item>
     <item>Thyme Leaves</item>
+    <item>Lemon Thyme Leaves</item>
     <item>Fresh Coriander</item>
+    <item>Fresh Chives</item>
+    <item>Fresh Rosemary</item>
     <item>Garlic Clove</item>
     <item>Sage Leaves</item>
     <item>Bay Leaves</item>
+    <item>Cayenne Pepper</item>
+    <item>Ground Ginger</item>
   </category>
   <category name="Drinks">
     <item>Dry Cider</item>
+    <item>Water</item>
+  </category>
+  <category name="Snacks">
+    <item>Light Digestive Biscuits</item>
+  </category>
+  <category name="Bottles, Pots and Tins">
+    <item>Chopped Tomatoes with Onion and Herbs</item>
+    <item>Sun Dried Tomato Paste</item>
+    <item>Pepperdew Peppers</item>
+    <item>Sherry Vinegar</item>
+    <item>Balsamic Vinegar</item>
   </category>
 
   <regularItem>Bread</regularItem>
@@ -155,4 +195,123 @@
     <ingredient amount="450" units="g" nameInShops="Mushrooms">Mushrooms, quartered (for the Filling)</ingredient>
     <ingredient amount="1" units="tbsp" nameInShops="Whole-Grain Mustard">Whole-Grain Mustard (for the Filling)</ingredient>
   </recipe>
+  <recipe>
+    <name>WeightWatchers Mushroom Carbonara</name>
+    <source>Page 93 of WeightWatchers "Delicious"</source>
+    <portions>4</portions>
+    <points>5</points>
+    <prepAndCookingTime>25 minutes</prepAndCookingTime>
+    <ingredient amount="300" units="g" nameInShops="Dried Bucatini">Dried Bucatini (or use Tagliatelle or Spaghetti)</ingredient>
+    <ingredient amount="25" units="g">Dried Porcini Mushrooms</ingredient>
+    <ingredient amount="150" units="ml" nameInShops="Water">Boiling Water</ingredient>
+    <ingredient amount="1" units=" squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="1" nameInShops="Red Onion">Red Onion, diced finely</ingredient>
+    <ingredient amount="1" nameInShops="Garlic Clove">Garlic Clove, crushed</ingredient>
+    <ingredient amount="300" units="g" nameInShops="Baby Portobelleo Mushrooms">Baby Portobelleo Mushrooms, wiped, trimmed and sliced</ingredient>
+    <ingredient amount="250" units="g" nameInShops="Quark">1x250g Pot of Quark</ingredient>
+    <ingredient amount="2" nameInShops="Egg">Egg yolks</ingredient>
+    <ingredient amount="1" units="tbsp" nameInShops="Fresh Chives">Snipped fresh chives</ingredient>
+    <ingredient amount="1" units=" pinch" nameInShops="Salt and Pepper">Salt and freshly ground black pepper</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Spicy Spinach Cannelloni</name>
+    <source>Page 153 of WeightWatchers "Delicious"</source>
+    <portions>4</portions>
+    <points>3.5</points>
+    <prepTime>15 minutes</prepTime>
+    <CookingTime>40 minutes</CookingTime>
+    <ingredient amount="400" units="g" nameInShops="Chopped Tomatoes with Onion and Herbs">1x400g Can chopped Tomatoes with Onion and Herbs</ingredient>
+    <ingredient amount="100" units="ml">Vegetable Stock</ingredient>
+    <ingredient amount="250" units="g" nameInShops="Quark">1x250g Pot of Quark</ingredient>
+    <ingredient amount="1" nameInShops="Egg">1 Egg Yolk</ingredient>
+    <ingredient amount="1" nameInShops="Red Chilli">Red chilli, de-seeded and chopped finely</ingredient>
+    <ingredient amount="375" units="g" nameInShops="Spinach">Frozen spinach, defrosted</ingredient>
+    <ingredient amount="150" units="g">Low Fat Soft Cheese with Garlic and Herbs</ingredient>
+    <ingredient amount="0.5" units="tsp" nameInShops="Cayenne Pepper">1/2 Teaspoon Cayenne Pepper</ingredient>
+    <ingredient amount="125" units="g" nameInShops="Cannelloni Tubes">Cannelloni Tubes (about 12)</ingredient>
+    <ingredient amount="2" units="tbsp" nameInShops="Fresh Coriander">Fresh, roughly chopped coriander, to serve</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Ratatouille Pie</name>
+    <source>Page 157 of WeightWatchers "Delicious"</source>
+    <portions>4</portions>
+    <points>4</points>
+    <prepTime>30 minutes</prepTime>
+    <CookingTime>40 minutes</CookingTime>
+    <ingredient amount="1" units="tbsp">Cornflour</ingredient>
+    <ingredient amount="1" units=" squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="2" nameInShops="Courgette">Courgettes, cut into chunks</ingredient>
+    <ingredient amount="1" nameInShops="Red Pepper">Red pepper, de-seeded and cut into chunks</ingredient>
+    <ingredient amount="1" nameInShops="Red Onion">Red onion, chopped roughly</ingredient>
+    <ingredient amount="1" nameInShops="Aubergine">Large aubergine, cut into chunks</ingredient>
+    <ingredient amount="4" nameInShops="Tomatoes">Tomatoes, quartered</ingredient>
+    <ingredient amount="1" nameInShops="Garlic Clove">Garlic clove, crushed</ingredient>
+    <ingredient amount="1" units="tbsp" nameInShops="Thyme Leaves">Fresh Thyme Leaves</ingredient>
+    <ingredient amount="2" units="tbsp">Sun Dried Tomato Paste</ingredient>
+    <ingredient amount="150" units="g" nameInShops="Ready Rolled Puff Pastry">Ready rolled puff pastry, from a 375g pack</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Spinach Gnocchi Gratin</name>
+    <source>Page 158 of WeightWatchers "Delicious"</source>
+    <portions>4</portions>
+    <points>4.5</points>
+    <prepTime>10 minutes</prepTime>
+    <CookingTime>20 minutes</CookingTime>
+    <ingredient amount="500" units="g" nameInShops="Gnocchi">1x500g pack fresh gnocchi</ingredient>
+    <ingredient amount="150" units="g" nameInShops="Spinach">frozen chopped spinach, defrosted</ingredient>
+    <ingredient amount="2" nameInShops="Garlic Clove">Garlic cloves, crushed</ingredient>
+    <ingredient amount="250" units="g" nameInShops="Reduced Fat Onion and Chive Cottage Cheese">1x250g pot reduced fat onion and chive cottage cheese</ingredient>
+    <ingredient amount="2" nameInShops="Egg">Egg yolks</ingredient>
+    <ingredient amount="50" units="g" nameInShops="Pepperdew Peppers">Mild or hot pepperdew peppers, sliced finely</ingredient>
+    <ingredient amount="15" units="g" nameInShops="Pine Nuts">Pine nut kernels, toasted</ingredient>
+    <ingredient amount="1" units=" pinch" nameInShops="Salt and Pepper">Freshly ground black pepper</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Roasted Root Vegetables</name>
+    <source>Page 174 of WeightWatchers "Delicious"</source>
+    <portions>4</portions>
+    <points>1.5</points>
+    <prepTime>15 minutes</prepTime>
+    <CookingTime>75 minutes</CookingTime>
+    <ingredient amount="3" nameInShops="Parsnips">Parsnips, peeled</ingredient>
+    <ingredient amount="200" units="g">New Potatoes</ingredient>
+    <ingredient amount="225" units="g" nameInShops="Butternut Squash">Butternut squash, peeled and de-seeded</ingredient>
+    <ingredient amount="2" nameInShops="Carrots">Carrots, peeled</ingredient>
+    <ingredient amount="1" nameInShops="Red Onion">Red onion, chopped roughly</ingredient>
+    <ingredient amount="4" nameInShops="Garlic Clove">Garlic cloves, unpeeled</ingredient>
+    <ingredient amount="4" units=" sprigs" nameInShops="Thyme Leaves">Sprigs of fresh thyme</ingredient>
+    <ingredient amount="2" units=" sprigs" nameInShops="Fresh Rosemary">Sprigs of fresh rosemary</ingredient>
+    <ingredient amount="1" units=" squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="1" units="tbsp">Sherry Vinegar</ingredient>
+    <ingredient amount="1" units=" pinch" nameInShops="Salt and Pepper">Salt and Freshly ground black pepper</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Slow Roasted Plums</name>
+    <source>Page 186 of WeightWatchers "Delicious"</source>
+    <portions>4</portions>
+    <points>0.5</points>
+    <prepTime>10 minutes</prepTime>
+    <CookingTime>75 minutes</CookingTime>
+    <ingredient amount="6" nameInShops="Plums">Slightly under ripe plums, halved and stoned</ingredient>
+    <ingredient amount="2" units="tbsp">Balsamic Vinegar</ingredient>
+    <ingredient amount="2" units="tsp">Vanilla Extract</ingredient>
+    <ingredient amount="2" units=" Sprigs" nameInShops="Lemon Thyme Leaves">Sprigs of fresh lemon thyme, leaves only</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Key Lime Pie</name>
+    <source>Page 201 of WeightWatchers "Delicious"</source>
+    <portions>12</portions>
+    <points>4</points>
+    <prepTime>10 minutes</prepTime>
+    <CookingTime>120 minutes</CookingTime>
+    <ingredient amount="200" units="g">Light Digestive Biscuits</ingredient>
+    <ingredient amount="1" units="tsp">Ground Ginger</ingredient>
+    <ingredient amount="75" units="g" nameInShops="Polyunsaturated Margarine">Low fat polyunsaturated margarine, melted</ingredient>
+    <ingredient amount="205" units="g" nameInShops="Light Condensed Milk">1x405g can light condensed milk</ingredient>
+    <ingredient amount="4" nameInShops="Limes">Zest and juice of 4 limes</ingredient>
+    <ingredient amount="125" units="ml" nameInShops="Low Fat Double Cream">Less than 33% fat double cream</ingredient>
+  </recipe>
+<!--
+    <ingredient amount="" units="" nameInShops=""></ingredient>
+-->
 </recipes>
