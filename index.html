@@ -1,11 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 Author: Tom Fotherby
-Version: FothoFood v0.2 (14/Nov/2008)
+Version: FotherFood v0.2 (14/Nov/2008)
 Softwara License: GNU General Public License v3+
 
 Feature List:
-   1. Buttons to add recipes to the shopping list (intial list of 5 recipes).
+   1. Buttons to add recipes to the shopping list (intial list of X recipes).
    2. Buttons to add regular shopping items to the shopping list (e.g. milk, bread, eggs, etc).
    3. Tracks the number of portions of each recipe in the shopping list.
    4. Each recipe has a "More Info" drop-down icon to display recipe details.
@@ -15,6 +15,14 @@ Feature List:
    8. Recipes are read from a XML file which means no source code needs to be edited when adding new recipes.
 
 ToDo List: 
+ * Ignore some things, such as "water".
+ * Work out how to do Eggs as a regular item and Egg as an ingredient.
+ * Work out prep+cooking and prep&cooking time.
+ * Work out optional ingredients: Coriander in Spicy Spinach Cannelloni.
+ * Work out how to do a "light" version of a product. e.g. light condensed milk.
+ * Work out how to do alternative ingredients.
+ * Have a Tesco Express CSS - No titles, no units
+ * Have Dessert section.
  * Include a pic of each recipe
  * Give each recipe a price 
  * Have method for searching for quick recipes or cheap recipes
@@ -28,14 +36,14 @@ ToDo List:
       <title>Shopping List Generator</title>
       <link rel="STYLESHEET" type="text/css" media="screen" href="StyleSheets/screen.css" />
       <link rel="STYLESHEET" type="text/css" media="print"  href="StyleSheets/print.css" />
-      <script type="text/javascript" src="JavaScript/fothofood.js"></script>
+      <script type="text/javascript" src="JavaScript/fotherfood.js"></script>
  </head>
 
 <body onload="load()">
 
 <h1 class="noPrint">Grocery Shopping List Generator</h1>
 
-<div class="noPrint"><i>What is this?</i> This is Fothofood v0.2. It is like speed dial for our Grocery shopping. See HTML source for more info.</div>
+<div class="noPrint"><i>What is this?</i> This is Fotherfood v0.2. It is like speed dial for our Grocery shopping. See HTML source for more info.</div>
 
 <h3 class="noPrint">Regular Items</h3>
 
