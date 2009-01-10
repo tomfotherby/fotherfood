@@ -7,3 +7,8 @@
 .noPrint {
   display: none;
 }
+table { border-collapse: collapse; }
+
+body {
+  font-size: smaller;
+}
