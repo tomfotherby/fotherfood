@@ -239,7 +239,7 @@ function modifyRecipeList(recipeName,numOfPortions,incOrDec)
 
    // Shade this recipe so it is clear it has been selected
    if (recipeList[recipeName] && recipeList[recipeName] > 0) {
-      document.getElementById(recipeName).style.background = "lightgray";
+      document.getElementById(recipeName).style.background = "#C0C0C0";
    } else {
       document.getElementById(recipeName).style.background = "white";
    }
@@ -277,12 +277,12 @@ function AssosSort(assoArray)
    var shoppingList2  = new Object();
 
    // Collect ingredients into an normal array so we can sort it (assositive arrays can't be sorted directly).
-   for (item in assoArray) 
-     ingredientKeys.push(item);
+   for (var itemA in assoArray) 
+     ingredientKeys.push(itemA);
 
    // Sort the normal array and then use it to re-create the assositive array in sorted order.
-   for (item in ingredientKeys.sort()) 
-     shoppingList2[ingredientKeys[item]] = assoArray[ingredientKeys[item]];
+   for (var itemB in ingredientKeys.sort()) 
+     shoppingList2[ingredientKeys[itemB]] = assoArray[ingredientKeys[itemB]];
 
    return shoppingList2;
 }
@@ -306,7 +306,7 @@ function updateShoppingList()
 
    // Gather recipe ingredients (and sort them)
    var listText = "";
-   for (item in AssosSort(shoppingList)) 
+   for (var item in AssosSort(shoppingList)) 
    {
      var unitsText = (units[item])?units[item]:"";
      listText += "<tr><td>" + item + "</td><td>" + shoppingList[item] + unitsText + "</td></tr>";
