@@ -20,31 +20,81 @@
 // ========================  G  L  O  B  A  L  S  ==========================
 // =========================================================================
 
-var CategoryArray    = new Array();
-var RecipeArray      = new Array();
-var RegularItemArray = new Array();
-var theShoppingList  = new ShoppingList();
+var xmlDoc; 
+
+var CategoryArray    = new Array();          // List of Food Categories (e.g. baking, drinks, veg, etc)
+var NoNeedToBuyItemArray = new Array();          // List of items that we don't need to shop for (e.g. water)
+var RecipeArray      = new Array();          // List of Recipes
+var RegularItemArray = new Array();          // List of generic regular items (e.g. milk, eggs, fruit)
+var theShoppingList  = new ShoppingList();   // The shopping list
 
 // =========================================================================
 // ==========  C  L  A  S  S     D  E  F  I  N  I  T  I  O  N  S  ==========
 // =========================================================================
 
 ///////////////////////////////////////////////////////////////////////
-// Class to define a recipe ingredient
-function SingleIngredient(nameInShop,prettyName,amount,units,category)
+// Constructor of Class to define a recipe ingredient
+function SingleIngredient(nameInShop,prettyName,initialAmount,initialUnits,category)
 {
-  this.nameInShop         = nameInShop;
-  this.prettyName         = prettyName;
-  this.amount             = amount;
-  this.units              = units;
-  this.unitConversionNote = "";
-  this.category           = category;
+  // Data Members
+  this.nameInShop      = nameInShop;
+  this.prettyName      = prettyName;
+  this.amount          = initialAmount;
+  this.units           = initialUnits;
+  this.category        = category;
+  this.unitList        = new Array(); // assosiative array Unit->amount.
+
+
+  if (initialUnits=="")
+      initialUnits = "wholeItem";
+  this.unitList[initialUnits]=initialAmount;
+
+  // Define the Member functions:
+
+  // Method of the SingleIngredient class to increase amount (coping with possibly different units)
+  //  Unit types: wholeItem (e.g. 1 carrot), g, tsp, tbsp, ml, pinch, squirt, sprig.
+  this.addTo = function(item)
+  {
+      if (this.nameInShops != item.nameInShops)
+	  alert("Can't add together \"" + this.nameInShops + "\" with \""+item.nameInShops+"\".");
+
+      if (item.units=="")
+	  item.units = "wholeItem";
+
+      if (undefined===this.unitList[item.units])
+	  this.unitList[item.units] = item.amount;
+      else
+	  this.unitList[item.units] += item.amount;
+  }
+  // Method of the SingleIngredient class to reduce amount (coping with possibly different units)
+  this.reduceFrom = function(item)
+  {
+      if (item.units=="")
+	  item.units = "wholeItem";
+
+      if (undefined===this.unitList[item.units])
+	  alert("Can't remove - item not in array");
+      else {
+	  this.unitList[item.units] -= item.amount;
+	  if (this.unitList[item.units] <= 0)
+	     delete this.unitList[item.units];
+      }
+  }
+  // Method of the SingleIngredient class to determine whether needed in shopping list
+  this.isNeeded = function()
+  {
+      for (var itemNeedTest in this.unitList)
+	  if (this.unitList[itemNeedTest] > 0)
+	      return true;
+      return false;
+  }
 }
 
 ///////////////////////////////////////////////////////////////////////
-// Class to define a entire recipe
+// Constructor for Class to define a entire recipe
 function SingleRecipe(recipeName,numOfPortions,recipeSource)
 {
+  // Data Members
   this.name           = recipeName;
   this.numOfPortions  = numOfPortions
   this.source         = recipeSource;
@@ -55,68 +105,53 @@ function SingleRecipe(recipeName,numOfPortions,recipeSource)
 }
 
 ///////////////////////////////////////////////////////////////////////
-// Class to define a Shopping List (i.e a list of ingredients and a method to add and remove them)
+// Constructor for Class to define a Shopping List (i.e a list of ingredients and a method to add and remove them)
 function ShoppingList()
 {
   this.ingredientList = new Array();
-  this.addSingleItem=sumIdenticalIngredients;
-  this.addRecipe=ShoppingListAddRecipe;
-  this.removeSingleItem=subtractIngredients;
-  this.removeRecipe=ShoppingListRemoveRecipe;
-  this.sort=ShoppingListSort;
-}
 
-  // method of the ShoppingList class to sum Identical Ingredients
-  function sumIdenticalIngredients(item)
+  // Define the Member functions:
+
+  // addSingleItem - Method of the ShoppingList class to add an item (Auto sum Identical Ingredients)
+  this.addSingleItem = function(item)
   {
    // First see if the ingredient already exists in the list
    var targetIngredientIndex = -1;
-   for (var i in this.ingredientList)
-       if (this.ingredientList[i].nameInShop == item.nameInShop) 
-       {
-	   targetIngredientIndex = i;
-	   // Add a warning in case mismatched units have been entered in the recipe XML file
-	   if (this.ingredientList[i].units != item.units)
-	       if (this.ingredientList[i].units == "g" && item.units == "tsp") {
-		   item.amount = 5*item.amount; // 1 tsp is 5 grams
-	       } else if (this.ingredientList[i].units == "tsp" && item.units == "tbsp") {
-		   item.amount = 3*item.amount; // 1 tbsp is 3 tsp
-	       } else
-	       this.ingredientList[i].unitConversionNote = " - Error! Unit mismatch. Can't add \"" + this.ingredientList[i].units + "\" with \"" + item.units + "\". Please unify units in XML and reload.";
-	   else
-	       this.ingredientList[i].unitConversionNote = "";
-       }
+   for (var addIngIndex in this.ingredientList)
+       if (this.ingredientList[addIngIndex].nameInShop == item.nameInShop) 
+	   targetIngredientIndex = addIngIndex;
 
-   // If the ingredient doesn't exist, create it, else add to it.
-   if (targetIngredientIndex < 0) {
+   // If the ingredient already exists in the list, add to it, else create it.
+   if (targetIngredientIndex >= 0) {
+     this.ingredientList[targetIngredientIndex].addTo(item);
+   } else {
      var newIngredient = new SingleIngredient(item.nameInShop,item.prettyName,item.amount,item.units,item.category);
      this.ingredientList.push(newIngredient);
-   } else {
-     this.ingredientList[targetIngredientIndex].amount += item.amount;
    }
   }
-  // method of the ShoppingList class to remove Ingredients
-  function subtractIngredients(item)
-  {
-   for (var i in this.ingredientList)
-      if (this.ingredientList[i].nameInShop == item.nameInShop)
-      {
-         this.ingredientList[i].amount -= item.amount;
 
-	 if (this.ingredientList[i].unitConversionNote != "");
-	     this.ingredientList[i].unitConversionNote = "";
-
-         if (this.ingredientList[i].amount <= 0)
-           delete this.ingredientList[i];
-      }
-  }
-  function ShoppingListAddRecipe(recipe)
+  // addRecipe - Method of the ShoppingList class to add a Recipe
+  this.addRecipe = function(recipe)
   {
       recipe.numWanted++;
       for (var j in recipe.ingredientList) 
          this.addSingleItem(recipe.ingredientList[j]);
   }
-  function ShoppingListRemoveRecipe(recipe)
+
+  // Method of the ShoppingList class to remove a Ingredient
+  this.removeSingleItem = function(item)
+  {
+   for (var itemToReduce in this.ingredientList)
+      if (this.ingredientList[itemToReduce].nameInShop == item.nameInShop)
+      {
+	  this.ingredientList[itemToReduce].reduceFrom(item);
+	  if (!this.ingredientList[itemToReduce].isNeeded())
+	      delete this.ingredientList[itemToReduce];
+      }
+  }
+
+  // Method of the ShoppingList class to remove Recipies
+  this.removeRecipe = function(recipe)
   {
       if (recipe.numWanted > 0)
       {
@@ -125,7 +160,9 @@ function ShoppingList()
            this.removeSingleItem(recipe.ingredientList[j]);
       }
   }
-  function ShoppingListSort()
+
+  // Method of the ShoppingList class to sort the list alphabetically
+  this.sort = function()
   {
    var ingredientKeys       = new Array();
    var sortedIngredientList = new Array();
@@ -135,13 +172,14 @@ function ShoppingList()
       ingredientKeys.push(this.ingredientList[i].nameInShop);
 
    // Sort the array of keys and then use it to re-create the array of ingredients.
-   for (var item1 in ingredientKeys.sort())
-     for (var item2 in this.ingredientList)
-        if (ingredientKeys[item1] == this.ingredientList[item2].nameInShop)
-          sortedIngredientList.push(this.ingredientList[item2]);
+   for (var ingKey in ingredientKeys.sort())
+       for (var copyItem in this.ingredientList)
+       if (ingredientKeys[ingKey] == this.ingredientList[copyItem].nameInShop)
+          sortedIngredientList.push(this.ingredientList[copyItem]);
 
    this.ingredientList = sortedIngredientList;
   }
+}
 
 // =========================================================================
 // =========  A  U  X  I  L  I  R  Y      F  U  N  C  T  I  O  N  S  =======
@@ -191,7 +229,7 @@ function modifyRecipiesInShoppingList(recipeName,incOrDec)
 
       // Shade this recipe so it is clear it has been selected
       if (recipe.numWanted > 0)
-         document.getElementById(recipe.name).style.background = "lightgray";
+         document.getElementById(recipe.name).style.background = "#C0C0C0";
       else
          document.getElementById(recipe.name).style.background = "white";
     }
@@ -217,10 +255,13 @@ function modifyRegularItemsInShoppingList(ingredientName)
 }
 
 ///////////////////////////////////////////////////////////////////////
+// Fill the "ShoppingList" DIV with a HTML table containing the current contents of the shopping list
 function DisplayShoppingList()
 {
+
+  // Format the recipes in the shopping list
   var recipeText = "";
-  for (i in RecipeArray) {
+  for (var i in RecipeArray) {
     var recipe = RecipeArray[i];
     if (recipe.numWanted > 0)
       recipeText += "<li>" + recipe.name + " - Portions: " + (recipe.numWanted*recipe.numOfPortions) + " <i>(" + recipe.source + ")</i>";
@@ -228,18 +269,22 @@ function DisplayShoppingList()
 
   theShoppingList.sort();
 
+  // Format the items in the shopping list
   var listText = "";
-  for (category in CategoryArray.sort()) 
+  for (var category in CategoryArray.sort()) 
   {
       var categoryName = CategoryArray[category];
       var outPutCatTitle = 1;
       for (var i in theShoppingList.ingredientList)
       {
         var ingredient = theShoppingList.ingredientList[i];
+
+	if (NoNeedToBuyItemArray[ingredient.nameInShop] == 1)
+	    continue; // Skip displaying items that we don't need to buy
+
         if (!ingredient.category)
-        {
            listText += "<p>Error \"" + ingredient.nameInShop + "\" has not been put into a food category (e.g. Rice and Pasta, Dairy, etc)\n";
-        } 
+
         if (ingredient.category == categoryName)
         {
            if (outPutCatTitle) 
@@ -247,11 +292,17 @@ function DisplayShoppingList()
              listText += "<h4 class='category'>" + categoryName + "</h4>\n";
              outPutCatTitle = 0;
            }
-           listText += "<tr><td>&nbsp;&nbsp;" + ingredient.nameInShop + "</td>";
-           if (ingredient.amount) {
-	       listText +=  "<td>" + ingredient.amount + ingredient.units + ingredient.unitConversionNote + "</td></tr>\n";
-           } else
-             listText +=  "<td>&nbsp;</td></tr>\n";
+
+	   var amountText =  "";
+	   for (var itemDisplay in ingredient.unitList) {
+	       if (amountText != "")
+		   amountText += " and ";
+	       amountText += ingredient.unitList[itemDisplay];
+	       if (itemDisplay != "wholeItem")
+		   amountText += " " + itemDisplay;
+	   }
+
+           listText += "<tr><td>&nbsp;&nbsp;" + ingredient.nameInShop + "</td><td>"+ amountText +"</td></tr>\n";
         }
       }
   }
@@ -264,27 +315,33 @@ function DisplayShoppingList()
 
 ///////////////////////////////////////////////////////////////////////
 // Parse the XML recipes and generate the page content and dynamic controls.
+// Call whenever the page loads
 function parseXMLRecipeList()
 {
   // Read the food categories (e.g. we can put apples in a "Fruit and Veg" category).
   var categoryList = xmlDoc.getElementsByTagName('category');
   var categories = new Object();
-  for (i=0; i < categoryList.length; i++)
+  for (var i=0; i < categoryList.length; i++)
   {
     var categoryName = categoryList[i].getAttribute('name');
     CategoryArray.push(categoryName);
-    for (j=0; j < categoryList[i].getElementsByTagName('item').length; j++)
+    for (var j=0; j < categoryList[i].getElementsByTagName('item').length; j++)
     {
+	// Save the category of each item
         var itemName = categoryList[i].getElementsByTagName('item')[j].childNodes[0].nodeValue;
         if (!categories[itemName])
           categories[itemName] = categoryName;
+
+	// Save a list of "no shop items" - e.g. water = 1, noodles = 0.
+	var isNoNeedToBuyItem = categoryList[i].getElementsByTagName('item')[j].getAttribute('notInShops');
+	NoNeedToBuyItemArray[itemName] = (isNoNeedToBuyItem) ? (1) : (0);
     }
   }
 
   // Generate a table of regular shopping items with checkboxes to allow the user to select them
   var regularItems = xmlDoc.getElementsByTagName('regularItem');
   var tblBody = document.createElement("tbody");
-  for (i=0; i < regularItems.length; i++)
+  for (var i=0; i < regularItems.length; i++)
   {
     var itemName = regularItems[i].childNodes[0].nodeValue;
 
@@ -316,7 +373,7 @@ function parseXMLRecipeList()
 
   // Generate a list of recipies with "-" and "+" buttons for the use to add to their shopping list
   var recipes = xmlDoc.getElementsByTagName('recipe');
-  for (i=0; i < recipes.length; i++)
+  for (var i=0; i < recipes.length; i++)
   {
     var curRecipe = recipes[i];
     // Gather and store info about this recipe - then add it to RecipeArray.
@@ -331,7 +388,7 @@ function parseXMLRecipeList()
     if (curRecipe.getElementsByTagName('prepAndCookingTime').length > 0)
        thisRecipe.prepAndCookingTime = curRecipe.getElementsByTagName('prepAndCookingTime')[0].childNodes[0].nodeValue;
 
-    for (j=0; j < curRecipe.getElementsByTagName('ingredient').length; j++)
+    for (var j=0; j < curRecipe.getElementsByTagName('ingredient').length; j++)
     {
       if (curRecipe.getElementsByTagName('ingredient')[j].nodeName == "ingredient")
       {
@@ -431,13 +488,33 @@ function parseXMLRecipeList()
 }
 
 ///////////////////////////////////////////////////////////////////////
-// When the page loads - read the XML document to get the recipe list
-function load() 
-{
-   xmlDoc = document.implementation.createDocument("", "", null);
-   xmlDoc.onload = parseXMLRecipeList;
-   xmlDoc.load("XML/recipes.xml");
+// Read the XML document to get the recipe list (Browser specific functionality)
+function importXML(file) { 
+    var moz = (typeof document.implementation != 'undefined') && (typeof document.implementation.createDocument != 'undefined'); 
+    var ie  = (typeof window.ActiveXObject != 'undefined'); 
 
-   DisplayShoppingList();
+    if (moz) { 
+	xmlDoc = document.implementation.createDocument("", "", null);
+	xmlDoc.onload = parseXMLRecipeList; 
+    } else if (ie) { 
+	xmlDoc = new ActiveXObject("Microsoft.XMLDOM"); 
+	xmlDoc.async = false; 
+
+	xmlDoc.onreadystatechange = function () {
+	    if (xmlDoc.readyState == 4) parseXMLRecipeList();
+	};
+    } else {
+	alert('Sorry, your browser can\'t handle this Javascript XML orientated script');
+	return;
+    }
+
+    xmlDoc.load(file); 
 }
 
+///////////////////////////////////////////////////////////////////////
+// When the page loads - read the XML document to get the recipe list and display an initially empty list
+function load() 
+{
+    importXML("XML/recipes.xml");
+    DisplayShoppingList();
+}
