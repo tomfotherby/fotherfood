@@ -1,7 +1,6 @@
 #labels Featured
 = Fotherfood !ToDo List =
-
- * Make it work on IE 6&7.                                                                                                                  
+                                                                                                            
  * Work out how to do Eggs as a regular item and Eggs as an ingredient.                                                                     
  * Work out prep+cooking and prep&cooking time.                                                                                             
  * Allow optional ingredients: Coriander in Spicy Spinach Cannelloni.                                                                       
