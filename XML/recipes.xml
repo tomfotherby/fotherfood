@@ -101,7 +101,7 @@
   </category>
   <category name="Drinks">
     <item>Dry Cider</item>
-    <item>Water</item>
+    <item notInShops="1">Water</item>
   </category>
   <category name="Snacks">
     <item>Light Digestive Biscuits</item>
@@ -130,8 +130,8 @@
     <ingredient amount="3" nameInShops="Sage Leaves">Sage Leaves, shredded</ingredient>
     <ingredient amount="25" units="g" nameInShops="Soft Goats Cheese">Soft Goats Cheese, crumbled</ingredient>
     <ingredient amount="1" nameInShops="Garlic Clove">Garlic Clove, sliced</ingredient>
-    <ingredient amount="1" units=" squirt">Low Fat Cooking Spray</ingredient>
-    <ingredient amount="1" units=" pinch">Salt and Pepper</ingredient>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="1" units="pinch">Salt and Pepper</ingredient>
   </recipe>
   <recipe>
     <name>WeightWatchers Spicy Pilaf</name>
@@ -185,7 +185,7 @@
     <ingredient amount="25" units="g">Plain Flour</ingredient>
     <ingredient amount="150" units="ml">Vegetable Stock</ingredient>
     <ingredient amount="150" units="ml">Skimmed Milk</ingredient>
-    <ingredient amount="1" units=" pinch">Salt and Pepper</ingredient>
+    <ingredient amount="1" units="pinch">Salt and Pepper</ingredient>
     <ingredient amount="0.5" units="tsp">Dijon Mustard</ingredient>
     <ingredient amount="40" units="g" nameInShops="Low Fat Cheddar Cheese">Mature Half Fat Cheddar Cheese, grated</ingredient>
     <ingredient amount="1" units="tsp">Thyme Leaves</ingredient>
@@ -199,7 +199,7 @@
     <points>7</points>
     <prepAndCookingTime>65 minutes</prepAndCookingTime>
     <ingredient amount="150" units="g" nameInShops="Plain Flour">Plain Flour and 1 tsp for rolling (for the Pastry)</ingredient>
-    <ingredient amount="1" units=" pinch" nameInShops="Salt and Pepper">Salt and Pepper (for the Pastry)</ingredient>
+    <ingredient amount="1" units="pinch" nameInShops="Salt and Pepper">Salt and Pepper (for the Pastry)</ingredient>
     <ingredient amount="80" units="g" nameInShops="Polyunsaturated Margarine">Low Fat Polyunsaturated Margarine (for the Pastry)</ingredient>
     <ingredient amount="15" units="g" nameInShops="Veggie Parmesan">Veggie Parmesan, grated (for the Pastry)</ingredient>
     <ingredient amount="1" units="tbsp" nameInShops="Thyme Leaves">Freshly chopped Thyme (for the Pastry)</ingredient>
@@ -220,14 +220,14 @@
     <ingredient amount="300" units="g" nameInShops="Dried Bucatini">Dried Bucatini (or use Tagliatelle or Spaghetti)</ingredient>
     <ingredient amount="25" units="g">Dried Porcini Mushrooms</ingredient>
     <ingredient amount="150" units="ml" nameInShops="Water">Boiling Water</ingredient>
-    <ingredient amount="1" units=" squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
     <ingredient amount="1" nameInShops="Red Onion">Red Onion, diced finely</ingredient>
     <ingredient amount="1" nameInShops="Garlic Clove">Garlic Clove, crushed</ingredient>
     <ingredient amount="300" units="g" nameInShops="Baby Portobelleo Mushrooms">Baby Portobelleo Mushrooms, wiped, trimmed and sliced</ingredient>
     <ingredient amount="250" units="g" nameInShops="Quark">1x250g Pot of Quark</ingredient>
     <ingredient amount="2" nameInShops="Egg">Egg yolks</ingredient>
     <ingredient amount="1" units="tbsp" nameInShops="Fresh Chives">Snipped fresh chives</ingredient>
-    <ingredient amount="1" units=" pinch" nameInShops="Salt and Pepper">Salt and freshly ground black pepper</ingredient>
+    <ingredient amount="1" units="pinch" nameInShops="Salt and Pepper">Salt and freshly ground black pepper</ingredient>
   </recipe>
   <recipe>
     <name>WeightWatchers Spicy Spinach Cannelloni</name>
@@ -255,7 +255,7 @@
     <prepTime>30 minutes</prepTime>
     <CookingTime>40 minutes</CookingTime>
     <ingredient amount="1" units="tbsp">Cornflour</ingredient>
-    <ingredient amount="1" units=" squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
     <ingredient amount="2" nameInShops="Courgette">Courgettes, cut into chunks</ingredient>
     <ingredient amount="1" nameInShops="Red Pepper">Red pepper, de-seeded and cut into chunks</ingredient>
     <ingredient amount="1" nameInShops="Red Onion">Red onion, chopped roughly</ingredient>
@@ -280,7 +280,7 @@
     <ingredient amount="2" nameInShops="Egg">Egg yolks</ingredient>
     <ingredient amount="50" units="g" nameInShops="Pepperdew Peppers">Mild or hot pepperdew peppers, sliced finely</ingredient>
     <ingredient amount="15" units="g" nameInShops="Pine Nuts">Pine nut kernels, toasted</ingredient>
-    <ingredient amount="1" units=" pinch" nameInShops="Salt and Pepper">Freshly ground black pepper</ingredient>
+    <ingredient amount="1" units="pinch" nameInShops="Salt and Pepper">Freshly ground black pepper</ingredient>
   </recipe>
   <recipe>
     <name>WeightWatchers Roasted Root Vegetables</name>
@@ -295,11 +295,11 @@
     <ingredient amount="2" nameInShops="Carrots">Carrots, peeled</ingredient>
     <ingredient amount="1" nameInShops="Red Onion">Red onion, chopped roughly</ingredient>
     <ingredient amount="4" nameInShops="Garlic Clove">Garlic cloves, unpeeled</ingredient>
-    <ingredient amount="4" units=" sprigs" nameInShops="Thyme Leaves">Sprigs of fresh thyme</ingredient>
-    <ingredient amount="2" units=" sprigs" nameInShops="Fresh Rosemary">Sprigs of fresh rosemary</ingredient>
-    <ingredient amount="1" units=" squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="4" units="sprigs" nameInShops="Thyme Leaves">Sprigs of fresh thyme</ingredient>
+    <ingredient amount="2" units="sprigs" nameInShops="Fresh Rosemary">Sprigs of fresh rosemary</ingredient>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
     <ingredient amount="1" units="tbsp">Sherry Vinegar</ingredient>
-    <ingredient amount="1" units=" pinch" nameInShops="Salt and Pepper">Salt and Freshly ground black pepper</ingredient>
+    <ingredient amount="1" units="pinch" nameInShops="Salt and Pepper">Salt and Freshly ground black pepper</ingredient>
   </recipe>
   <recipe>
     <name>WeightWatchers Slow Roasted Plums</name>
@@ -311,7 +311,7 @@
     <ingredient amount="6" nameInShops="Plums">Slightly under ripe plums, halved and stoned</ingredient>
     <ingredient amount="2" units="tbsp">Balsamic Vinegar</ingredient>
     <ingredient amount="2" units="tsp">Vanilla Extract</ingredient>
-    <ingredient amount="2" units=" Sprigs" nameInShops="Lemon Thyme Leaves">Sprigs of fresh lemon thyme, leaves only</ingredient>
+    <ingredient amount="2" units="sprigs" nameInShops="Lemon Thyme Leaves">Sprigs of fresh lemon thyme, leaves only</ingredient>
   </recipe>
   <recipe>
     <name>WeightWatchers Key Lime Pie</name>
