@@ -1,0 +1,22 @@
+#summary A list of changes made with various software releases
+#labels Featured
+
+= Change Log =
+
+== Feature List for trunk (Not Yet released) ==
+
+ # 12 Recipes in list
+ # Recipes stored in XML files and loaded dynamically
+ # Multiple units for same shopping list item is now handled
+ # The shopping list is now sorted by category of the ingredient (e.g. baking, fruit, etc) (as well as alphabetically).
+ # The shopping list ignores ingredients that we don't need to buy (e.g. water)     
+
+== Feature List for version 0.1 (released 14/Nov/08) ==
+
+  # Buttons to add recipes to the shopping list (initial list of 5 recipes).
+  # Buttons to add regular shopping items to the shopping list (e.g. milk, bread, eggs, etc).
+  # Tracks the number of portions of each recipe in the shopping list.
+  # Each recipe has a "More Info" drop-down icon to display recipe details.
+  # Identical ingredients are summed together in the shopping list
+  # The shopping list is sorted alphabetically by ingredients
+  # Print mode - Only shows what's in the shopping list (not every recipe). 
