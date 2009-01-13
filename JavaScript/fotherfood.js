@@ -289,7 +289,7 @@ function DisplayShoppingList()
         {
            if (outPutCatTitle) 
            {
-             listText += "<h4 class='category'>" + categoryName + "</h4>\n";
+             listText += "<h4 class='category'>" + categoryName + "</h4>\n<table>";
              outPutCatTitle = 0;
            }
 
@@ -305,12 +305,13 @@ function DisplayShoppingList()
            listText += "<tr><td>&nbsp;&nbsp;" + ingredient.nameInShop + "</td><td>"+ amountText +"</td></tr>\n";
         }
       }
+      listText += "</table>\n";
   }
 
   if (listText.length == 0) 
      document.getElementById("ShoppingList").innerHTML = "<h3>Shopping List</h3>\n<i>Empty</i>\n";
   else
-     document.getElementById("ShoppingList").innerHTML = "<h3>Shopping List</h3>\n<ul>"+recipeText+"</ul>\n<p><table>"+listText+"</table>\n";
+     document.getElementById("ShoppingList").innerHTML = "<h3>Shopping List</h3>\n<ul>"+recipeText+"</ul>\n<p>"+listText+"\n";
 }
 
 ///////////////////////////////////////////////////////////////////////
@@ -415,6 +416,7 @@ function parseXMLRecipeList()
     // Now generate HTML to display this recipe on the page
 
     var recipeDIV = document.createElement('DIV');
+    recipeDIV.setAttribute("className", "recipe"); // IE workaround. (Shouldn't be needed but it is!)
     recipeDIV.setAttribute("class", "recipe");
     recipeDIV.setAttribute("id", thisRecipe.name);
 
@@ -430,7 +432,7 @@ function parseXMLRecipeList()
     recipeDIV.appendChild(recipeTitle);
 
     var infoDIV = document.createElement('DIV');
-    infoDIV.setAttribute("style", "display:none;");
+    infoDIV.style.cssText = "display:none";  // IE workaround. IE doesn't like infoDIV.setAttribute("style", "display:none;");
     infoDIV.setAttribute("id", thisRecipe.name + " Info");
 
     infoDIV.appendChild(document.createTextNode("Recipe Source: " + thisRecipe.source));
