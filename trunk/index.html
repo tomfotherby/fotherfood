@@ -20,16 +20,17 @@ _____________________________
 
 Author: Tom Fotherby
 Version: FotherFood v0.2 (10/Jan/2009)
-Softwara License: GNU General Public License v3+
+Softwara License: GNU Affero General Public License v3+
 
 Feature List:
-   1. List of X recipes
+   1. List of 12 recipes
    2. Buttons to add recipes to a shopping list.
    3. Buttons to add regular shopping items to the shopping list (e.g. milk, bread, eggs, etc).
    4. Tracks the number of portions of each recipe in the shopping list.
    5. Each recipe has a "More Info" drop-down icon to display recipe details.
-   6. Identical ingredients are summed together in the shopping list
+   6. Identical ingredients are summed together in the shopping list and different units are handled.
    7. The shopping list is sorted alphabetically by ingredients and by category of the ingredient (e.g. baking, fruit, etc).
+    7b. The shoppin list ignores ingredients that we don't need to buy (e.g. water)
    8. Print mode - Only shows what's in the current shopping list (not every recipe). 
 
 Technical Details:
@@ -38,7 +39,7 @@ Technical Details:
    3. Recipes are read from a XML file which means no source code needs to be edited when adding new recipes.
 
 ToDo List: 
- * Allow to ignore some ingredients in the shopping list. E.g. "water".
+ * Make it work on IE 6&7.
  * Work out how to do Eggs as a regular item and Eggs as an ingredient.
  * Work out prep+cooking and prep&cooking time.
  * Allow optional ingredients: Coriander in Spicy Spinach Cannelloni.
@@ -67,7 +68,7 @@ ToDo List:
 
 <h1 class="noPrint">Grocery Shopping List Generator</h1>
 
-<div class="noPrint"><i>What is this?</i> This is Fotherfood v0.2. It is like speed dial for our Grocery shopping. See HTML source for more info.</div>
+<div class="noPrint"><i>What is this?</i> This is a demo for Fotherfood v0.2 - like speed dial for our Grocery shopping. See <a href="http://fotherfood.googlecode.com/">Project home page</a> for more info.</div>
 
 <h3 class="noPrint">Regular Items</h3>
 
