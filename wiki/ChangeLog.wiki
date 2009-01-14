@@ -10,6 +10,8 @@
  # Multiple units for same shopping list item is now handled
  # The shopping list is now sorted by category of the ingredient (e.g. baking, fruit, etc) (as well as alphabetically).
  # The shopping list ignores ingredients that we don't need to buy (e.g. water)     
+ # Amounts and units are allowed in regular items
+ # Recipes can now have a prep time, a cooking time or a prepAndCooking time.
 
 == Feature List for version 0.1 (released 14/Nov/08) ==
 
