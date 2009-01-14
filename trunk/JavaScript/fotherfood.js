@@ -102,6 +102,8 @@ function SingleRecipe(recipeName,numOfPortions,recipeSource)
   this.ingredientList = new Array();
   this.weightWatcherPoints = -1;
   this.prepAndCookingTime = "";
+  this.prepTime = "";
+  this.cookingTime = "";
 }
 
 ///////////////////////////////////////////////////////////////////////
@@ -344,10 +346,14 @@ function parseXMLRecipeList()
   var tblBody = document.createElement("tbody");
   for (var i=0; i < regularItems.length; i++)
   {
-    var itemName = regularItems[i].childNodes[0].nodeValue;
+    var itemName   = regularItems[i].childNodes[0].nodeValue;
+    var itemAmount = regularItems[i].getAttribute('amount');
+    if (!itemAmount) itemAmount = 1;
+    var itemUnits = regularItems[i].getAttribute('units');
+    if (!itemUnits) itemUnits = "";
 
     // Store this ingredient in RegularItemArray.
-    var newIngred = new SingleIngredient(itemName,itemName,1,"",categories[itemName]);
+    var newIngred = new SingleIngredient(itemName,itemName,parseFloat(itemAmount),itemUnits,categories[itemName]);
     RegularItemArray.push(newIngred);
 
     var row   = document.createElement("tr");
@@ -388,6 +394,10 @@ function parseXMLRecipeList()
        thisRecipe.weightWatcherPoints = curRecipe.getElementsByTagName('points')[0].childNodes[0].nodeValue;
     if (curRecipe.getElementsByTagName('prepAndCookingTime').length > 0)
        thisRecipe.prepAndCookingTime = curRecipe.getElementsByTagName('prepAndCookingTime')[0].childNodes[0].nodeValue;
+    if (curRecipe.getElementsByTagName('prepTime').length > 0)
+       thisRecipe.prepTime = curRecipe.getElementsByTagName('prepTime')[0].childNodes[0].nodeValue;
+    if (curRecipe.getElementsByTagName('cookingTime').length > 0)
+       thisRecipe.cookingTime = curRecipe.getElementsByTagName('cookingTime')[0].childNodes[0].nodeValue;
 
     for (var j=0; j < curRecipe.getElementsByTagName('ingredient').length; j++)
     {
@@ -447,6 +457,14 @@ function parseXMLRecipeList()
     }
     if (thisRecipe.prepAndCookingTime.length > 0) {
       infoDIV.appendChild(document.createTextNode("Preparation and Cooking Time: " + thisRecipe.prepAndCookingTime));
+      infoDIV.appendChild(document.createElement('BR'))
+    }
+    if (thisRecipe.prepTime.length > 0) {
+      infoDIV.appendChild(document.createTextNode("Preparation Time: " + thisRecipe.prepTime));
+      infoDIV.appendChild(document.createElement('BR'))
+    }
+    if (thisRecipe.cookingTime.length > 0) {
+      infoDIV.appendChild(document.createTextNode("Cooking Time: " + thisRecipe.cookingTime));
       infoDIV.appendChild(document.createElement('BR'))
     }
 
