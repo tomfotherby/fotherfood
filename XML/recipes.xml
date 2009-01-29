@@ -21,10 +21,13 @@
     <item>Penne Pasta</item>
     <item>Basmati Rice</item>
     <item>Rice</item>
+    <item>Brown Rice</item>
     <item>Macaroni</item>
     <item>Dried Bucatini</item>
     <item>Cannelloni Tubes</item>
     <item>Gnocchi</item>
+    <item>Dried Couscous</item>
+    <item>Easy Cook Polenta</item>
   </category>
   <category name="Baking">
     <item>Bread</item>
@@ -53,12 +56,14 @@
     <item>Skimmed Milk</item>
     <item>Natural Bio-yogurt</item>
     <item>Greek Yogurt</item>
+    <item>Low Fat Yogurt</item>
     <item>Veggie Parmesan</item>
     <item>Quark</item>
     <item>Low Fat Soft Cheese with Garlic and Herbs</item>
     <item>Reduced Fat Onion and Chive Cottage Cheese</item>
     <item>Light Condensed Milk</item>
     <item>Low Fat Double Cream</item>
+    <item>Low Fat Greek Style Lemon Yogurt</item>
   </category>
   <category name="Fruit and Veg">
     <item>Fruit</item>
@@ -66,6 +71,7 @@
     <item>Swede</item>
     <item>Parsnips</item>
     <item>Mushrooms</item>
+    <item>Mixed Mushrooms</item>
     <item>Baby Portobelleo Mushrooms</item>
     <item>Dried Porcini Mushrooms</item>
     <item>Prunes</item>
@@ -74,6 +80,7 @@
     <item>Carrots</item>
     <item>Onions</item>
     <item>Red Onions</item>
+    <item>Spring Onions</item>
     <item>Leeks</item>
     <item>Cherry Tomatoes</item>
     <item>Red Chillis</item>
@@ -84,6 +91,9 @@
     <item>New Potatoes</item>
     <item>Plums</item>
     <item>Limes</item>
+    <item>Lemons</item>
+    <item>Sweet Potatos</item>
+    <item>Green Beans</item>
   </category>
   <category name="Herbs and Spices">
     <item>Root Ginger</item>
@@ -92,11 +102,20 @@
     <item>Fresh Coriander</item>
     <item>Fresh Chives</item>
     <item>Fresh Rosemary</item>
+    <item>Fresh Mint</item>
     <item>Garlic Cloves</item>
     <item>Sage Leaves</item>
     <item>Bay Leaves</item>
     <item>Cayenne Pepper</item>
     <item>Ground Ginger</item>
+    <item>Balti Curry Powder</item>
+    <item>Moroccan Spice Blend</item>
+    <item>Cardamom Pods</item>
+    <item>Saffron Threads</item>
+    <item>Cumin</item>
+    <item>Dried Chilli Flakes</item>
+    <item>Ground Cloves</item>
+    <item>Paprika</item>
   </category>
   <category name="Drinks">
     <item>Dry Cider</item>
@@ -105,12 +124,21 @@
   <category name="Snacks">
     <item>Light Digestive Biscuits</item>
   </category>
-  <category name="Bottles, Pots and Tins">
+  <category name="Bottles, Sauces, Pots, Packs and Tins">
     <item>Chopped Tomatoes with Onion and Herbs</item>
     <item>Sun Dried Tomato Paste</item>
     <item>Pepperdew Peppers</item>
     <item>Sherry Vinegar</item>
     <item>Balsamic Vinegar</item>
+    <item>Butter Beans</item>
+    <item>Chick Peas</item>
+    <item>Tinned Sweetcorn</item>
+    <item>Mixed Pulses</item>
+    <item>Mixed Stir Fry Vegetables</item>
+    <item>Passata with onion and garlic</item>
+  </category>
+  <category name="Frozen">
+    <item>Quorn Beef Style Pieces</item>
   </category>
 
   <regularItem units="pack">Bread</regularItem>
@@ -230,7 +258,7 @@
   </recipe>
   <recipe>
     <name>WeightWatchers Spicy Spinach Cannelloni</name>
-    <source>Page 153 of WeightWatchers "Delicious"</source>
+    <source>Page 154 of WeightWatchers "Delicious"</source>
     <portions>4</portions>
     <points>3.5</points>
     <prepTime>15 minutes</prepTime>
@@ -301,6 +329,91 @@
     <ingredient amount="1" units="pinch" nameInShops="Salt and Pepper">Salt and Freshly ground black pepper</ingredient>
   </recipe>
   <recipe>
+    <name>WeightWatchers Piri piri stir fry Veg Beef</name>
+    <source>Page 5 of WeightWatchers "Spicy and speedy"</source>
+    <portions>2</portions>
+    <points>4.5</points>
+    <prepAndCookingTime>15 minutes</prepAndCookingTime>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="200" units="g">Quorn Beef Style Pieces</ingredient>
+    <ingredient amount="2" nameInShops="Red Chillis">Large Red chillis, de-seeded and chopped finely</ingredient>
+    <ingredient amount="1" units="tsp">Paprika</ingredient>
+    <ingredient amount="300" units="g" nameInShops="Mixed Stir Fry Vegetables">Pack of fresh mixed stir fry vegetables</ingredient>
+    <ingredient amount="100" units="g">Passata with onion and garlic</ingredient>
+    <ingredient amount="0.5" nameInShops="Lemons">Juice of 1/2 lemon</ingredient>
+    <ingredient amount="300" units="g">Brown Rice</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Texan Beans</name>
+    <source>Page 8 of WeightWatchers "Spicy and speedy"</source>
+    <portions>2</portions>
+    <points>2</points>
+    <prepAndCookingTime>17 minutes</prepAndCookingTime>
+    <ingredient amount="1" nameInShops="Onions">Small onion, chopped</ingredient>
+    <ingredient amount="400" units="g" nameInShops="Chopped Tomatoes with Onion and Herbs">1x400g Can chopped Tomatoes with Onion and Herbs</ingredient>
+    <ingredient amount="0.5" units="tsp">Ground Cloves</ingredient>
+    <ingredient amount="1" units="pinch">Dried Chilli Flakes</ingredient>
+    <ingredient amount="0.5" units="tsp" nameInShops="Cumin">Ground Cumin</ingredient>
+    <ingredient amount="0.5" units="tsp">Paprika</ingredient>
+    <ingredient amount="410" units="g" nameInShops="Mixed Pulses">can mixed pulses, drained and rinsed</ingredient>
+    <ingredient amount="1" nameInShops="Red Peppers">Red pepper, de-seeded and diced</ingredient>
+    <ingredient amount="1" units="tbsp" nameInShops="Fresh Mint">Fresh mint, chopped</ingredient>
+    <ingredient amount="1" units="tbsp" nameInShops="Fresh Coriander">Fresh Coriander, chopped</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Chilli Polenta Wedges</name>
+    <source>Page 13 of WeightWatchers "Spicy and speedy"</source>
+    <portions>4</portions>
+    <points>3.5</points>
+    <prepAndCookingTime>20 minutes</prepAndCookingTime>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="850" units="ml">Vegetable Stock</ingredient>
+    <ingredient amount="1" units="pinch">Saffron Threads</ingredient>
+    <ingredient amount="200" units="g">Easy Cook Polenta</ingredient>
+    <ingredient amount="3" nameInShops="Cardamom Pods">Cardamom Pods, seeds removed and crushed</ingredient>
+    <ingredient amount="198" units="g" nameInShops="Tinned Sweetcorn">Can sweetcorn, drained</ingredient>
+    <ingredient amount="2" units="tbsp" nameInShops="Fresh Coriander">Fresh Coriander, roughly chopped</ingredient>
+    <ingredient amount="3" nameInShops="Spring Onions">Spring Onions, trimmed and sliced finely</ingredient>
+    <ingredient amount="300" units="g" nameInShops="Mixed Mushrooms">Mixed mushrooms, wiped, trimmed and sliced</ingredient>
+    <ingredient amount="1" nameInShops="Red Chillis">Red chilli, de-seeded and chopped finely</ingredient>
+    <ingredient amount="4" units="tbsp" nameInShops="Low Fat Yogurt">Low Fat plain yogurt</ingredient>
+    <ingredient amount="1" units="pinch" nameInShops="Salt and Pepper">Salt and ground black pepper</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Moorish Tagine</name>
+    <source>Page 21 of WeightWatchers "Spicy and speedy"</source>
+    <portions>4</portions>
+    <points>4</points>
+    <prepAndCookingTime>30 minutes</prepAndCookingTime>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="1" nameInShops="Onions">Onion, chopped</ingredient>
+    <ingredient amount="500" units="ml">Vegetable Stock</ingredient>
+    <ingredient amount="300" units="g" nameInShops="Sweet Potatos">Sweet Potato, peeled and diced into small cubes</ingredient>
+    <ingredient amount="100" units="g" nameInShops="Green Beans">Fine green beans, trimmed and halved</ingredient>
+    <ingredient amount="1" nameInShops="Red Peppers">Red pepper, de-seeded and sliced</ingredient>
+    <ingredient amount="1" units="tsp" nameInShops="Moroccan Spice Blend">Ras el Hanout or any Moroccan Spice Blend</ingredient>
+    <ingredient amount="100" units="g">Dried Couscous</ingredient>
+    <ingredient amount="410" units="g" nameInShops="Chick Peas">Can Chick Peas, drained and rinsed</ingredient>
+    <ingredient amount="50" units="g">Raisins</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Sweet Potato Balti</name>
+    <source>Page 41 of WeightWatchers "Spicy and speedy"</source>
+    <portions>4</portions>
+    <points>2</points>
+    <prepAndCookingTime>27 minutes</prepAndCookingTime>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="500" units="g" nameInShops="Sweet Potatos">Sweet Potato, peeled and cut lengthways then sliced into half moons</ingredient>
+    <ingredient amount="400" units="g" nameInShops="Chopped Tomatoes with Onion and Herbs">1x400g Can chopped Tomatoes with Onion and Herbs</ingredient>
+    <ingredient amount="1" nameInShops="Garlic Cloves">Garlic cloves, crushed</ingredient>
+    <ingredient amount="2" units="tbsp">Balti Curry Powder</ingredient>
+    <ingredient amount="150" units="ml">Vegetable Stock</ingredient>
+    <ingredient amount="410" units="g" nameInShops="Butter Beans">Can Butter Beans, drained and rinsed</ingredient>
+    <ingredient amount="1" nameInShops="Red Chillis">Red chilli, sliced</ingredient>
+    <ingredient amount="75" units="g" nameInShops="Spinach">frozen chopped spinach</ingredient>
+    <ingredient amount="2" units="tbsp" nameInShops="Fresh Coriander">Fresh Coriander, chopped</ingredient>
+  </recipe>
+  <recipe>
     <name>WeightWatchers Slow Roasted Plums</name>
     <source>Page 186 of WeightWatchers "Delicious"</source>
     <portions>4</portions>
@@ -325,6 +438,7 @@
     <ingredient amount="205" units="g" nameInShops="Light Condensed Milk">1x405g can light condensed milk</ingredient>
     <ingredient amount="4" nameInShops="Limes">Zest and juice of 4 limes</ingredient>
     <ingredient amount="125" units="ml" nameInShops="Low Fat Double Cream">Less than 33% fat double cream</ingredient>
+    <ingredient amount="125" units="g">Low Fat Greek Style Lemon Yogurt</ingredient>
   </recipe>
 <!--
     <ingredient amount="" units="" nameInShops=""></ingredient>
