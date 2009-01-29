@@ -266,7 +266,7 @@ function DisplayShoppingList()
   for (var i in RecipeArray) {
     var recipe = RecipeArray[i];
     if (recipe.numWanted > 0)
-      recipeText += "<li>" + recipe.name + " - Portions: " + (recipe.numWanted*recipe.numOfPortions) + " <i>(" + recipe.source + ")</i>";
+      recipeText += "<li>" + recipe.name + " - Portions: " + (recipe.numWanted*recipe.numOfPortions) + ", Points: " + recipe.weightWatcherPoints + " <i>(" + recipe.source + ")</i>";
   }
 
   theShoppingList.sort();
