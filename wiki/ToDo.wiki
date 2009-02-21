@@ -1,9 +1,9 @@
-#labels Featured
+#labels Featured,ToDo
 = Fotherfood !ToDo List =
 
  * Work out how to make plural versions of ingredients be the same as the non plural ingredient
  * Allow optional ingredients: Coriander in Spicy Spinach Cannelloni.
- * Work out how to do a "light" version of a item. e.g. light condensed milk.
+ * ~~Work out how to do a "light" version of a item. e.g. light condensed milk.~~ _(done 21/Feb/09)_
  * Work out how to do alternative ingredients. E.g. Tagliatelle instead of Bucatini in Mushroom Carbonara.
  * Break recipes into a Main and Dessert section.
  * Format recipes according to a mircoformats standard: http://microformats.org/wiki/recipe
