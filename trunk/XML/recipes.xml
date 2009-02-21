@@ -29,6 +29,9 @@
     <item>Dried Couscous</item>
     <item>Easy Cook Polenta</item>
   </category>
+  <category name="Bread">
+    <item>Wholemeal Pitta Bread</item>
+  </category>
   <category name="Baking">
     <item>Bread</item>
     <item>Low Fat Cooking Spray</item>
@@ -51,19 +54,20 @@
   <category name="Dairy">
     <item>Milk</item>
     <item>Soft Goats Cheese</item>
-    <item>Low Fat Mature Cheddar Cheese</item>
-    <item>Low Fat Cheddar Cheese</item>
+    <item>Mature Cheddar Cheese</item>
+    <item>Cheddar Cheese</item>
     <item>Skimmed Milk</item>
     <item>Natural Bio-yogurt</item>
     <item>Greek Yogurt</item>
-    <item>Low Fat Yogurt</item>
+    <item>Yogurt</item>
     <item>Veggie Parmesan</item>
     <item>Quark</item>
-    <item>Low Fat Soft Cheese with Garlic and Herbs</item>
+    <item>Soft Cheese with Garlic and Herbs</item>
     <item>Reduced Fat Onion and Chive Cottage Cheese</item>
     <item>Light Condensed Milk</item>
-    <item>Low Fat Double Cream</item>
-    <item>Low Fat Greek Style Lemon Yogurt</item>
+    <item>Double Cream</item>
+    <item>Greek Style Lemon Yogurt</item>
+    <item>Halloumi</item>
   </category>
   <category name="Fruit and Veg">
     <item>Fruit</item>
@@ -94,6 +98,8 @@
     <item>Lemons</item>
     <item>Sweet Potatos</item>
     <item>Green Beans</item>
+    <item>Cucumber</item>
+    <item>Mixed Leaf Salad</item>
   </category>
   <category name="Herbs and Spices">
     <item>Root Ginger</item>
@@ -208,13 +214,13 @@
     <points>7</points>
     <prepAndCookingTime>30 minutes</prepAndCookingTime>
     <ingredient amount="125" units="g">Macaroni</ingredient>
-    <ingredient amount="25" units="g" nameInShops="Polyunsaturated Margarine">Low Fat Polyunsaturated Margarine</ingredient>
+    <ingredient amount="25" units="g" lowFat="1" nameInShops="Polyunsaturated Margarine">Low Fat Polyunsaturated Margarine</ingredient>
     <ingredient amount="25" units="g">Plain Flour</ingredient>
     <ingredient amount="150" units="ml">Vegetable Stock</ingredient>
     <ingredient amount="150" units="ml">Skimmed Milk</ingredient>
     <ingredient amount="1" units="pinch">Salt and Pepper</ingredient>
     <ingredient amount="0.5" units="tsp">Dijon Mustard</ingredient>
-    <ingredient amount="40" units="g" nameInShops="Low Fat Cheddar Cheese">Mature Half Fat Cheddar Cheese, grated</ingredient>
+    <ingredient amount="40" units="g" lowFat="1" nameInShops="Cheddar Cheese">Mature Half Fat Cheddar Cheese, grated</ingredient>
     <ingredient amount="1" units="tsp">Thyme Leaves</ingredient>
     <ingredient amount="6" nameInShops="Cherry Tomatoes">Cherry Tomatoes, Halved</ingredient>
     <ingredient amount="2" units="tsp" nameInShops="Veggie Parmesan">Veggie Parmesan, grated</ingredient>
@@ -227,10 +233,10 @@
     <prepAndCookingTime>65 minutes</prepAndCookingTime>
     <ingredient amount="150" units="g" nameInShops="Plain Flour">Plain Flour and 1 tsp for rolling (for the Pastry)</ingredient>
     <ingredient amount="1" units="pinch" nameInShops="Salt and Pepper">Salt and Pepper (for the Pastry)</ingredient>
-    <ingredient amount="80" units="g" nameInShops="Polyunsaturated Margarine">Low Fat Polyunsaturated Margarine (for the Pastry)</ingredient>
+    <ingredient amount="80" units="g" lowFat="1" nameInShops="Polyunsaturated Margarine">Low Fat Polyunsaturated Margarine (for the Pastry)</ingredient>
     <ingredient amount="15" units="g" nameInShops="Veggie Parmesan">Veggie Parmesan, grated (for the Pastry)</ingredient>
     <ingredient amount="1" units="tbsp" nameInShops="Thyme Leaves">Freshly chopped Thyme (for the Pastry)</ingredient>
-    <ingredient amount="50" units="g" nameInShops="Polyunsaturated Margarine">Low Fat Polyunsaturated Margarine (for the Filling)</ingredient>
+    <ingredient amount="50" units="g" lowFat="1" nameInShops="Polyunsaturated Margarine">Low Fat Polyunsaturated Margarine (for the Filling)</ingredient>
     <ingredient amount="4" nameInShops="Leeks">Leeks (for the Filling)</ingredient>
     <ingredient amount="300" units="ml" nameInShops="Vegetable Stock">Vegetable Stock (for the Filling)</ingredient>
     <ingredient amount="40" units="g" nameInShops="Plain Flour">Plain Flour (for the Filling)</ingredient>
@@ -269,7 +275,7 @@
     <ingredient amount="1" nameInShops="Eggs">1 Egg Yolk</ingredient>
     <ingredient amount="1" nameInShops="Red Chillis">Red chilli, de-seeded and chopped finely</ingredient>
     <ingredient amount="375" units="g" nameInShops="Spinach">Frozen spinach, defrosted</ingredient>
-    <ingredient amount="150" units="g">Low Fat Soft Cheese with Garlic and Herbs</ingredient>
+    <ingredient amount="150" lowFat="1" units="g" nameInShops="Soft Cheese with Garlic and Herbs">Low Fat Soft Cheese with Garlic and Herbs</ingredient>
     <ingredient amount="0.5" units="tsp" nameInShops="Cayenne Pepper">1/2 Teaspoon Cayenne Pepper</ingredient>
     <ingredient amount="125" units="g" nameInShops="Cannelloni Tubes">Cannelloni Tubes (about 12)</ingredient>
     <ingredient amount="2" units="tbsp" nameInShops="Fresh Coriander">Fresh, roughly chopped coriander, to serve</ingredient>
@@ -376,7 +382,7 @@
     <ingredient amount="3" nameInShops="Spring Onions">Spring Onions, trimmed and sliced finely</ingredient>
     <ingredient amount="300" units="g" nameInShops="Mixed Mushrooms">Mixed mushrooms, wiped, trimmed and sliced</ingredient>
     <ingredient amount="1" nameInShops="Red Chillis">Red chilli, de-seeded and chopped finely</ingredient>
-    <ingredient amount="4" units="tbsp" nameInShops="Low Fat Yogurt">Low Fat plain yogurt</ingredient>
+    <ingredient amount="4" units="tbsp" lowFat="1" nameInShops="Yogurt">Low Fat plain yogurt</ingredient>
     <ingredient amount="1" units="pinch" nameInShops="Salt and Pepper">Salt and ground black pepper</ingredient>
   </recipe>
   <recipe>
@@ -434,11 +440,25 @@
     <cookingTime>120 minutes</cookingTime>
     <ingredient amount="200" units="g">Light Digestive Biscuits</ingredient>
     <ingredient amount="1" units="tsp">Ground Ginger</ingredient>
-    <ingredient amount="75" units="g" nameInShops="Polyunsaturated Margarine">Low fat polyunsaturated margarine, melted</ingredient>
+    <ingredient amount="75" units="g" lowFat="1" nameInShops="Polyunsaturated Margarine">Low fat polyunsaturated margarine, melted</ingredient>
     <ingredient amount="205" units="g" nameInShops="Light Condensed Milk">1x405g can light condensed milk</ingredient>
     <ingredient amount="4" nameInShops="Limes">Zest and juice of 4 limes</ingredient>
-    <ingredient amount="125" units="ml" nameInShops="Low Fat Double Cream">Less than 33% fat double cream</ingredient>
-    <ingredient amount="125" units="g">Low Fat Greek Style Lemon Yogurt</ingredient>
+    <ingredient amount="125" units="ml" lowFat="1" nameInShops="Double Cream">Less than 33% fat double cream</ingredient>
+    <ingredient amount="125" lowFat="1" units="g" nameInShops="Greek Style Lemon Yogurt">Low Fat Greek Style Lemon Yogurt</ingredient>
+  </recipe>
+  <recipe>
+    <name>WeightWatchers Halloumi Pitta</name>
+    <source>Page 34 of WeightWatchers "Cook!"</source>
+    <portions>2</portions>
+    <points>5.5</points>
+    <prepAndCookingTime>10 minutes</prepAndCookingTime>
+    <ingredient amount="140" units="g" lowFat="Light" nameInShops="Halloumi">Light Halloumi, sliced</ingredient>
+    <ingredient amount="2">Wholemeal Pitta Bread</ingredient>
+    <ingredient>Mixed Leaf Salad</ingredient>
+    <ingredient amount="2" nameInShops="Pepperdew Peppers">Pepperdew Peppers, cut into thin stips, plus 2 tsp of juice for the jar</ingredient>
+    <ingredient amount="1" nameInShops="Cucumber">Cucumber, diced</ingredient>
+    <ingredient amount="2" units="tsp" nameInShops="Red Onions">Red Onions, finely chopped</ingredient>
+    <ingredient amount="2" units="tbsp" nameInShops="Fresh Coriander">Coriander Leaves, finely chopped</ingredient>
   </recipe>
 <!--
     <ingredient amount="" units="" nameInShops=""></ingredient>

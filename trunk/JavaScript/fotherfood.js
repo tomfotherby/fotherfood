@@ -34,16 +34,19 @@ var theShoppingList  = new ShoppingList();   // The shopping list
 
 ///////////////////////////////////////////////////////////////////////
 // Constructor of Class to define a recipe ingredient
-function SingleIngredient(nameInShop,prettyName,initialAmount,initialUnits,category)
+function SingleIngredient(nameInShop,prettyName,initialAmount,initialUnits,lowFat,category)
 {
   // Data Members
   this.nameInShop      = nameInShop;
   this.prettyName      = prettyName;
   this.amount          = initialAmount;
   this.units           = initialUnits;
+  this.lowFat          = lowFat;
   this.category        = category;
   this.unitList        = new Array(); // assosiative array Unit->amount.
 
+  if (lowFat == "1")
+      this.lowFat = "Low Fat";
 
   if (initialUnits=="")
       initialUnits = "wholeItem";
@@ -57,6 +60,9 @@ function SingleIngredient(nameInShop,prettyName,initialAmount,initialUnits,categ
   {
       if (this.nameInShops != item.nameInShops)
 	  alert("Can't add together \"" + this.nameInShops + "\" with \""+item.nameInShops+"\".");
+
+      if (this.lowFat != item.lowFat)
+	  this.lowFat = "Low fat (but normal also needed)";
 
       if (item.units=="")
 	  item.units = "wholeItem";
@@ -127,7 +133,7 @@ function ShoppingList()
    if (targetIngredientIndex >= 0) {
      this.ingredientList[targetIngredientIndex].addTo(item);
    } else {
-     var newIngredient = new SingleIngredient(item.nameInShop,item.prettyName,item.amount,item.units,item.category);
+     var newIngredient = new SingleIngredient(item.nameInShop,item.prettyName,item.amount,item.units,item.lowFat,item.category);
      this.ingredientList.push(newIngredient);
    }
   }
@@ -266,7 +272,7 @@ function DisplayShoppingList()
   for (var i in RecipeArray) {
     var recipe = RecipeArray[i];
     if (recipe.numWanted > 0)
-      recipeText += "<li>" + recipe.name + " - Portions: " + (recipe.numWanted*recipe.numOfPortions) + ", Points: " + recipe.weightWatcherPoints + " <i>(" + recipe.source + ")</i>";
+      recipeText += "<li>" + recipe.name + " <i>(" + recipe.source + ") - Portions: " + (recipe.numWanted*recipe.numOfPortions) + ", Points: " + recipe.weightWatcherPoints + ".";
   }
 
   theShoppingList.sort();
@@ -304,7 +310,12 @@ function DisplayShoppingList()
 		   amountText += " " + itemDisplay;
 	   }
 
-           listText += "<tr><td>&nbsp;&nbsp;" + ingredient.nameInShop + "</td><td>"+ amountText +"</td></tr>\n";
+	   var listItemName = ingredient.nameInShop;
+	   if (ingredient.lowFat)
+	       listItemName = ingredient.lowFat + " " + listItemName;
+	       
+
+           listText += "<tr><td>&nbsp;&nbsp;" + listItemName + "</td><td>"+ amountText +"</td></tr>\n";
         }
       }
       listText += "</table>\n";
@@ -351,9 +362,11 @@ function parseXMLRecipeList()
     if (!itemAmount) itemAmount = 1;
     var itemUnits = regularItems[i].getAttribute('units');
     if (!itemUnits) itemUnits = "";
+    var lowFat = regularItems[i].getAttribute('lowFat');
+    if (!lowFat) lowFat = "";
 
     // Store this ingredient in RegularItemArray.
-    var newIngred = new SingleIngredient(itemName,itemName,parseFloat(itemAmount),itemUnits,categories[itemName]);
+    var newIngred = new SingleIngredient(itemName,itemName,parseFloat(itemAmount),itemUnits,lowFat,categories[itemName]);
     RegularItemArray.push(newIngred);
 
     var row   = document.createElement("tr");
@@ -414,10 +427,13 @@ function parseXMLRecipeList()
          var ingredientUnits = ingredient.getAttribute('units');
          if (!ingredientUnits) ingredientUnits = "";
 
+         var lowFat = ingredient.getAttribute('lowFat');
+         if (!lowFat) lowFat = "";
+
          var ingredientCategory = categories[ingredientnameInShop];
          if (!ingredientCategory) ingredientCategory = "";
          
-         var thisIngredient = new SingleIngredient(ingredientnameInShop,ingredientPrettyName,parseFloat(ingredientAmount),ingredientUnits,ingredientCategory);
+         var thisIngredient = new SingleIngredient(ingredientnameInShop,ingredientPrettyName,parseFloat(ingredientAmount),ingredientUnits,lowFat,ingredientCategory);
          thisRecipe.ingredientList.push(thisIngredient);
       }
     }
