@@ -272,7 +272,7 @@ function DisplayShoppingList()
   for (var i in RecipeArray) {
     var recipe = RecipeArray[i];
     if (recipe.numWanted > 0)
-      recipeText += "<li>" + recipe.name + " <i>(" + recipe.source + ") - Portions: " + (recipe.numWanted*recipe.numOfPortions) + ", Points: " + recipe.weightWatcherPoints + ".";
+      recipeText += "<li>" + recipe.name + " <i>(" + recipe.source + ")</i> - Portions: " + (recipe.numWanted*recipe.numOfPortions) + ", Points: " + recipe.weightWatcherPoints + ".";
   }
 
   theShoppingList.sort();
@@ -526,12 +526,18 @@ function parseXMLRecipeList()
 ///////////////////////////////////////////////////////////////////////
 // Read the XML document to get the recipe list (Browser specific functionality)
 function importXML(file) { 
-    var moz = (typeof document.implementation != 'undefined') && (typeof document.implementation.createDocument != 'undefined'); 
+    var mozOrSaf = (typeof document.implementation != 'undefined') && (typeof document.implementation.createDocument != 'undefined'); 
     var ie  = (typeof window.ActiveXObject != 'undefined'); 
 
-    if (moz) { 
-	xmlDoc = document.implementation.createDocument("", "", null);
-	xmlDoc.onload = parseXMLRecipeList; 
+    if (mozOrSaf) { 
+	//xmlDoc = document.implementation.createDocument("", "", null);
+	//xmlDoc.onload = parseXMLRecipeList; 
+
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET",file,false);
+	xmlhttp.send("");
+	xmlDoc = xmlhttp.responseXML;
+	parseXMLRecipeList();
     } else if (ie) { 
 	xmlDoc = new ActiveXObject("Microsoft.XMLDOM"); 
 	xmlDoc.async = false; 
@@ -539,12 +545,12 @@ function importXML(file) {
 	xmlDoc.onreadystatechange = function () {
 	    if (xmlDoc.readyState == 4) parseXMLRecipeList();
 	};
+	xmlDoc.load(file); 
+
     } else {
 	alert('Sorry, your browser can\'t handle this Javascript XML orientated script');
 	return;
     }
-
-    xmlDoc.load(file); 
 }
 
 ///////////////////////////////////////////////////////////////////////
