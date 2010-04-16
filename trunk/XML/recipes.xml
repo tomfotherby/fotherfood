@@ -18,63 +18,102 @@
 -->
 <recipes>
   <category name="Rice and Pasta">
+    <item>Dried Rice Noodles</item>
     <item>Penne Pasta</item>
     <item>Basmati Rice</item>
+    <item>Long Grain Rice</item>
     <item>Rice</item>
     <item>Brown Rice</item>
+    <item>Jasmine Rice</item>
     <item>Macaroni</item>
     <item>Dried Bucatini</item>
     <item>Cannelloni Tubes</item>
     <item>Gnocchi</item>
     <item>Dried Couscous</item>
     <item>Easy Cook Polenta</item>
+    <item>Egg Noodles</item>
+    <item>Spaghetti</item>
+    <item>Red Lentils</item>
+    <item>Small-Grain Bulgur Wheat</item>
   </category>
   <category name="Bread">
     <item>Wholemeal Pitta Bread</item>
+    <item>Wheat Tortillas</item>
   </category>
   <category name="Baking">
+    <item>Artificial Sweetner</item>
+    <item>Bicarbonate of Soda</item>
     <item>Bread</item>
     <item>Low Fat Cooking Spray</item>
+    <item>Vegetable Oil</item>
     <item>Sunflower Oil</item>
+    <item>Olive Oil</item>
+    <item>Sesame Oil</item>
+    <item>Peanut Oil</item>
     <item>Polyunsaturated Margarine</item>
     <item>Sunflower Margarine</item>
     <item>Salt and Pepper</item>
+    <item>Sea Salt</item>
+    <item>Salt</item>
     <item>Vegetable Stock</item>
     <item>Flaked Almonds</item>
+    <item>Crushed Almonds</item>
+    <item>Ground Almonds</item>
     <item>Plain Flour</item>
+    <item>Self-Raising Flour</item>
     <item>Dijon Mustard</item>
     <item>Whole-Grain Mustard</item>
     <item>Mild curry paste</item>
     <item>Eggs</item>
     <item>Cornflour</item>
     <item>Ready Rolled Puff Pastry</item>
+    <item>Dried Cranberries</item>
     <item>Pine Nuts</item>
+    <item>Sesame Seeds</item>
+    <item>Sambal Oelek</item>
     <item>Vanilla Extract</item>
+    <item>Caster Sugar</item>
+    <item>Raw Sugar</item>
+    <item>Cream Of Tartar</item>
+    <item>Glace Cherries</item>
+    <item>Black Onion Seeds</item>
+    <item>Unsalted Roasted Peanuts</item>
   </category>
   <category name="Dairy">
     <item>Milk</item>
+    <item>Butter</item>
+    <item>Semi-Skimmed Milk</item>
     <item>Soft Goats Cheese</item>
     <item>Mature Cheddar Cheese</item>
+    <item>Low Fat Cheddar Cheese</item>
     <item>Cheddar Cheese</item>
+    <item>Cottage Cheese</item>
     <item>Skimmed Milk</item>
     <item>Natural Bio-yogurt</item>
     <item>Greek Yogurt</item>
     <item>Yogurt</item>
     <item>Veggie Parmesan</item>
     <item>Quark</item>
+    <item>Low Fat Soft Cheese</item>
     <item>Soft Cheese with Garlic and Herbs</item>
     <item>Reduced Fat Onion and Chive Cottage Cheese</item>
     <item>Light Condensed Milk</item>
     <item>Double Cream</item>
+    <item>Creme Fraiche</item>
     <item>Greek Style Lemon Yogurt</item>
     <item>Halloumi</item>
   </category>
   <category name="Fruit and Veg">
+    <item>Avocado</item>
     <item>Fruit</item>
+    <item>Firm Tofu</item>
+    <item>Bean Sprouts</item>
     <item>Butternut Squash</item>
     <item>Swede</item>
     <item>Parsnips</item>
     <item>Mushrooms</item>
+    <item>Button Mushrooms</item>
+    <item>Large Flat Mushrooms</item>
     <item>Mixed Mushrooms</item>
     <item>Baby Portobelleo Mushrooms</item>
     <item>Dried Porcini Mushrooms</item>
@@ -85,43 +124,71 @@
     <item>Onions</item>
     <item>Red Onions</item>
     <item>Spring Onions</item>
+    <item>Shallots</item>
     <item>Leeks</item>
+    <item>Lettuce</item>
     <item>Cherry Tomatoes</item>
+    <item>Tomatoes</item>
+    <item>Baby Plum Tomatoes</item>
     <item>Red Chillis</item>
+    <item>Green Chillis</item>
     <item>Red Peppers</item>
+    <item>Yellow Peppers</item>
+    <item>Baby Spinach</item>
+    <item>Young Leaf Fresh Spinach</item>
     <item>Spinach</item>
     <item>Courgettes</item>
-    <item>Tomatoes</item>
+    <item>Potatoes</item>
     <item>New Potatoes</item>
     <item>Plums</item>
-    <item>Limes</item>
-    <item>Lemons</item>
-    <item>Sweet Potatos</item>
+    <item>Pumpkin</item>
+    <item>Lime</item>
+    <item>Lemon</item>
+    <item>Sweet Potatoes</item>
     <item>Green Beans</item>
     <item>Cucumber</item>
     <item>Mixed Leaf Salad</item>
+    <item>Salad</item>
   </category>
   <category name="Herbs and Spices">
+    <item>Ground Allspice</item>
+    <item>Thai 7 Spice</item>
     <item>Root Ginger</item>
     <item>Thyme Leaves</item>
     <item>Lemon Thyme Leaves</item>
+    <item>Kaffir Lime Leaves</item>
+    <item>Lemongrass</item>
     <item>Fresh Coriander</item>
+    <item>Ground Coriander</item>
+    <item>Fresh Basil</item>
+    <item>Flat-leaf Parsley</item>
     <item>Fresh Chives</item>
     <item>Fresh Rosemary</item>
     <item>Fresh Mint</item>
     <item>Garlic Cloves</item>
     <item>Sage Leaves</item>
+    <item>Mustard Seeds</item>
     <item>Bay Leaves</item>
     <item>Cayenne Pepper</item>
     <item>Ground Ginger</item>
     <item>Balti Curry Powder</item>
+    <item>Mild Curry Powder</item>
     <item>Moroccan Spice Blend</item>
     <item>Cardamom Pods</item>
+    <item>Caraway Seeds</item>
+    <item>Fennel Seeds</item>
+    <item>Pumpkin Seeds</item>
     <item>Saffron Threads</item>
     <item>Cumin</item>
+    <item>Turmeric</item>
+    <item>Cinnamon</item>
+    <item>Coriander Seeds</item>
+    <item>Chilli Powder</item>
     <item>Dried Chilli Flakes</item>
     <item>Ground Cloves</item>
     <item>Paprika</item>
+    <item>Smoked Paprika</item>
+    <item>Garlic Puree</item>
   </category>
   <category name="Drinks">
     <item>Dry Cider</item>
@@ -131,20 +198,37 @@
     <item>Light Digestive Biscuits</item>
   </category>
   <category name="Bottles, Sauces, Pots, Packs and Tins">
-    <item>Chopped Tomatoes with Onion and Herbs</item>
+    <item>Chopped Tomatoes with Onion and Herbs</item> 
+    <item>Coconut Milk</item>
+    <item>Peeled Tomatoes</item>
     <item>Sun Dried Tomato Paste</item>
+    <item>Tomato Puree</item>
     <item>Pepperdew Peppers</item>
     <item>Sherry Vinegar</item>
     <item>Balsamic Vinegar</item>
+    <item>Garlic Wine Vinegar</item>
+    <item>White Wine Vinegar</item>
     <item>Butter Beans</item>
     <item>Chick Peas</item>
     <item>Tinned Sweetcorn</item>
+    <item>Mild Chilli Sauce</item>
+    <item>Sweet Chilli Sauce</item>
     <item>Mixed Pulses</item>
     <item>Mixed Stir Fry Vegetables</item>
     <item>Passata with onion and garlic</item>
+    <item>Kidney beans</item>
+    <item>Pinto beans</item>
+    <item>Light Soy Sauce</item>
+    <item>Smooth Peanut Butter</item>
+    <item>Cream Crackers</item>
+    <item>Evaporated Milk</item>
+    <item>Jar of Black Olives</item>
   </category>
   <category name="Frozen">
     <item>Quorn Beef Style Pieces</item>
+    <item>Quorn Fillets</item>
+    <item>Frozen Soya Beans</item>
+    <item>Frozen Mixed Peppers</item>
   </category>
 
   <regularItem units="pack">Bread</regularItem>
@@ -220,7 +304,6 @@
     <ingredient amount="150" units="ml">Skimmed Milk</ingredient>
     <ingredient amount="1" units="pinch">Salt and Pepper</ingredient>
     <ingredient amount="0.5" units="tsp">Dijon Mustard</ingredient>
-    <ingredient amount="40" units="g" lowFat="1" nameInShops="Cheddar Cheese">Mature Half Fat Cheddar Cheese, grated</ingredient>
     <ingredient amount="1" units="tsp">Thyme Leaves</ingredient>
     <ingredient amount="6" nameInShops="Cherry Tomatoes">Cherry Tomatoes, Halved</ingredient>
     <ingredient amount="2" units="tsp" nameInShops="Veggie Parmesan">Veggie Parmesan, grated</ingredient>
@@ -346,7 +429,7 @@
     <ingredient amount="1" units="tsp">Paprika</ingredient>
     <ingredient amount="300" units="g" nameInShops="Mixed Stir Fry Vegetables">Pack of fresh mixed stir fry vegetables</ingredient>
     <ingredient amount="100" units="g">Passata with onion and garlic</ingredient>
-    <ingredient amount="0.5" nameInShops="Lemons">Juice of 1/2 lemon</ingredient>
+    <ingredient amount="0.5" nameInShops="Lemon">Juice of 1/2 lemon</ingredient>
     <ingredient amount="300" units="g">Brown Rice</ingredient>
   </recipe>
   <recipe>
@@ -394,7 +477,7 @@
     <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
     <ingredient amount="1" nameInShops="Onions">Onion, chopped</ingredient>
     <ingredient amount="500" units="ml">Vegetable Stock</ingredient>
-    <ingredient amount="300" units="g" nameInShops="Sweet Potatos">Sweet Potato, peeled and diced into small cubes</ingredient>
+    <ingredient amount="300" units="g" nameInShops="Sweet Potatoes">Sweet Potato, peeled and diced into small cubes</ingredient>
     <ingredient amount="100" units="g" nameInShops="Green Beans">Fine green beans, trimmed and halved</ingredient>
     <ingredient amount="1" nameInShops="Red Peppers">Red pepper, de-seeded and sliced</ingredient>
     <ingredient amount="1" units="tsp" nameInShops="Moroccan Spice Blend">Ras el Hanout or any Moroccan Spice Blend</ingredient>
@@ -409,7 +492,7 @@
     <points>2</points>
     <prepAndCookingTime>27 minutes</prepAndCookingTime>
     <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
-    <ingredient amount="500" units="g" nameInShops="Sweet Potatos">Sweet Potato, peeled and cut lengthways then sliced into half moons</ingredient>
+    <ingredient amount="500" units="g" nameInShops="Sweet Potatoes">Sweet Potato, peeled and cut lengthways then sliced into half moons</ingredient>
     <ingredient amount="400" units="g" nameInShops="Chopped Tomatoes with Onion and Herbs">1x400g Can chopped Tomatoes with Onion and Herbs</ingredient>
     <ingredient amount="1" nameInShops="Garlic Cloves">Garlic cloves, crushed</ingredient>
     <ingredient amount="2" units="tbsp">Balti Curry Powder</ingredient>
@@ -442,7 +525,7 @@
     <ingredient amount="1" units="tsp">Ground Ginger</ingredient>
     <ingredient amount="75" units="g" lowFat="1" nameInShops="Polyunsaturated Margarine">Low fat polyunsaturated margarine, melted</ingredient>
     <ingredient amount="205" units="g" nameInShops="Light Condensed Milk">1x405g can light condensed milk</ingredient>
-    <ingredient amount="4" nameInShops="Limes">Zest and juice of 4 limes</ingredient>
+    <ingredient amount="4" nameInShops="Lime">Zest and juice of 4 limes</ingredient>
     <ingredient amount="125" units="ml" lowFat="1" nameInShops="Double Cream">Less than 33% fat double cream</ingredient>
     <ingredient amount="125" lowFat="1" units="g" nameInShops="Greek Style Lemon Yogurt">Low Fat Greek Style Lemon Yogurt</ingredient>
   </recipe>
@@ -460,7 +543,368 @@
     <ingredient amount="2" units="tsp" nameInShops="Red Onions">Red Onions, finely chopped</ingredient>
     <ingredient amount="2" units="tbsp" nameInShops="Fresh Coriander">Coriander Leaves, finely chopped</ingredient>
   </recipe>
-<!--
-    <ingredient amount="" units="" nameInShops=""></ingredient>
--->
+
+  <recipe>
+    <name>Mexican Refried Beans</name>
+    <source>Page 233 of "1000 Vegetarian Recipies"</source>
+    <portions>4</portions>
+    <points>?</points>
+    <prepTime>15 minutes</prepTime>
+    <CookingTime>15 minutes</CookingTime>
+    <ingredient amount="2" units="tbsp" >Olive Oil</ingredient>
+    <ingredient amount="1" nameInShops="Onions">Onion, chopped</ingredient>
+    <ingredient amount="3" nameInShops="Garlic Cloves">Garlic cloves, crushed</ingredient>
+    <ingredient amount="2" nameInShops="Green Chillis">Green chilli, de-seeded and chopped finely</ingredient>
+    <ingredient amount="400" units="g" nameInShops="Kidney beans">Canned red kidney beans, drained</ingredient>
+    <ingredient amount="400" units="g" nameInShops="Pinto beans">Canned pinto beans, drained</ingredient>
+    <ingredient amount="2" units="tbsp" nameInShops="Fresh Coriander">Coriander Leaves, chopped</ingredient>
+    <ingredient amount="150" units="ml">Vegetable Stock</ingredient>
+    <ingredient amount="8">Wheat Tortillas</ingredient>
+    <ingredient amount="25" units="g" nameInShops="Cheddar Cheese">Cheddar cheese, grated</ingredient>
+    <ingredient amount="4" nameInShops="Spring Onions">Spring Onions, trimmed and sliced finely</ingredient>
+    <ingredient amount="1" nameInShops="Red Onions">Red Onions, finely chopped</ingredient>
+    <ingredient amount="1" units="tbsp">Garlic Wine Vinegar</ingredient>
+    <ingredient amount="1" units="tsp">Caster Sugar</ingredient>
+    <ingredient amount="1" nameInShops="Tomatoes">Tomato, chopped</ingredient>
+    <ingredient amount="1" units="pinch">Salt and Pepper</ingredient>
+  </recipe>
+  <recipe>
+    <name>Cheddar and Tomato Rice</name>
+    <source>Magazine cut-out (Page 112 of ?)</source>
+    <portions>4</portions>
+    <points>?</points>
+    <prepAndCookingTime>1 hour</prepAndCookingTime>
+    <ingredient amount="2" units="tbsp" >Olive Oil</ingredient>
+    <ingredient amount="1" nameInShops="Onions">Onion, thinly sliced</ingredient>
+    <ingredient amount="1" nameInShops="Red Peppers">Red pepper, de-seeded and sliced</ingredient>
+    <ingredient amount="1" nameInShops="Garlic Cloves">Garlic cloves, finely chopped</ingredient>
+    <ingredient amount="300" units="g">Long Grain Rice</ingredient>
+    <ingredient amount="1000" units="ml">Vegetable Stock</ingredient>
+    <ingredient amount="227" units="g" nameInShops="Chopped Tomatoes">1x227g Can chopped Tomatoes</ingredient>
+    <ingredient amount="100" units="g" nameInShops="Mature Cheddar Cheese">Mature Cheddar, cubed</ingredient>
+    <ingredient amount="1" units="bag">Salad</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>Sesame Hot Noodles</name>
+    <source>Page 377 of "1000 Vegetarian Recipies"</source>
+    <portions>4</portions>
+    <points>?</points>
+    <prepTime>5 minutes</prepTime>
+    <CookingTime>10 minutes</CookingTime>
+    <ingredient amount="500" units="g">Egg Noodles</ingredient>
+    <ingredient amount="3" units="tbsp" >Sunflower Oil</ingredient>
+    <ingredient amount="2" units="tbsp" >Sesame Oil</ingredient>
+    <ingredient amount="1" nameInShops="Garlic Cloves">Garlic clove, crushed</ingredient>
+    <ingredient amount="1" units="tbsp" >Smooth Peanut Butter</ingredient>
+    <ingredient amount="1" nameInShops="Green Chillis">Green chilli, de-seeded and chopped finely</ingredient>
+    <ingredient amount="3" units="tbsp" nameInShops="Sesame Seeds">Sesame Seeds, toasted</ingredient>
+    <ingredient amount="4" units="tbsp">Light Soy Sauce</ingredient>
+    <ingredient amount="0.5" units="tbsp" nameInShops="Lime">Lime juice</ingredient>
+    <ingredient amount="4" units="tbsp" nameInShops="Fresh Coriander">Coriander Leaves, chopped</ingredient>
+    <ingredient amount="1" units="pinch">Salt and Pepper</ingredient>
+  </recipe>
+  <recipe>
+    <name>Tabbouleh</name>
+    <source>Recipe photocopied from Mum</source>
+    <portions>4</portions>
+    <points>?</points>
+    <prepAndCookingTime>25 minutes</prepAndCookingTime>
+    <ingredient amount="2" units="tsp">Caraway Seeds</ingredient>
+    <ingredient amount="2" units="tsp" >Fennel Seeds</ingredient>
+    <ingredient amount="40" units="g" >Pumpkin Seeds</ingredient>
+    <ingredient amount="40" units="g">Pine Nuts</ingredient>
+    <ingredient amount="250" units="g">Small-Grain Bulgur Wheat</ingredient>
+    <ingredient amount="1" nameInShops="Avocado">Large Avocado, peeled and diced</ingredient>
+    <ingredient amount="4" units="tbsp">Crushed Almonds</ingredient>
+    <ingredient amount="2" units="tbsp">Raisins</ingredient>
+    <ingredient amount="2" units="tbsp">Dried Cranberries</ingredient>
+    <ingredient amount="2">Baby Plum Tomatoes</ingredient>
+    <ingredient amount="12" nameInShops="Fresh Mint">Fresh mint leaves, roughly chopped</ingredient>
+    <ingredient amount="2" units="handfuls" nameInShops="Flat-leaf Parsley">Flat-leaf parsley, roughly chopped</ingredient>
+    <ingredient amount="1" nameInShops="Lemon">1 Lemon, juiced</ingredient>
+    <ingredient amount="2" units="tbsp" nameInShops="Olive Oil">Extra Virgin Olive Oil</ingredient>
+    <ingredient amount="3" units="pinch">Sea Salt</ingredient>
+    <ingredient amount="2" units="pinch">Cayenne Pepper</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>Spicy Sweet Potato, Spinach and Coconut Soup</name>
+    <source>Recipe photocopied from Tesco Magazine</source>
+    <portions>4</portions>
+    <points>?</points>
+    <prepAndCookingTime>25 minutes</prepAndCookingTime>
+    <ingredient amount="1" units="tbsp">Vegetable Oil</ingredient>
+    <ingredient amount="1" nameInShops="Onions">Chopped onion</ingredient>
+    <ingredient amount="1" units="tsp">Chilli Powder</ingredient>
+    <ingredient amount="2" units="tsp">Ground Ginger</ingredient>
+    <ingredient amount="2" nameInShops="Garlic Cloves">Crushed garlic cloves</ingredient>
+    <ingredient amount="2" units="pints">Vegetable Stock</ingredient>
+    <ingredient amount="750" units="g" nameInShops="Sweet Potatoes">peeled and diced sweet potatoes</ingredient>
+    <ingredient amount="250" units="g" nameInShops="Button Mushrooms">sliced button mushrooms</ingredient>
+    <ingredient amount="400" units="g" nameInShops="Coconut Milk">Can coconut milk</ingredient>
+    <ingredient amount="225" units="g" nameInShops="Baby Spinach">Pack baby spinach</ingredient>
+    <ingredient amount="1" nameInShops="Lime">Juice of a lime (or lemon)</ingredient>
+    <ingredient amount="1" units="tbsp" nameInShops="Fresh Coriander">Chopped Coriander leaves to garnish</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>WeightWatchers Florentine Mushrooms</name>
+    <source>Page 36 of WeightWatchers "Cook Eat Enjoy"</source>
+    <portions>2</portions>
+    <points>1</points>
+    <prepAndCookingTime>15 minutes</prepAndCookingTime>
+    <ingredient amount="2">Large Flat Mushrooms</ingredient>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="1" units="pinch">Salt and Pepper</ingredient>
+    <ingredient amount="100" units="g">Young Leaf Fresh Spinach</ingredient>
+    <ingredient amount="1" units="tbsp">Low Fat Soft Cheese</ingredient>
+    <ingredient amount="1">Eggs</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>WeightWatchers Cherry Scones</name>
+    <source>Page 172 of WeightWatchers "Cook Eat Enjoy"</source>
+    <portions>12</portions>
+    <points>1.5</points>
+    <prepTime>15 minutes</prepTime>
+    <CookingTime>15 minutes</CookingTime> 
+    <ingredient amount="1" units="tbsp" nameInShops="Lemon">lemon juice</ingredient>
+    <ingredient amount="150" units="ml">Skimmed Milk</ingredient>
+    <ingredient amount="225" units="g">Self-Raising Flour</ingredient>
+    <ingredient amount="1/2" units="tsp">Cream Of Tartar</ingredient>
+    <ingredient amount="1" units="pinch">Salt</ingredient>
+    <ingredient amount="40" units="g" nameInShops="Polyunsaturated Margarine">Low Fat Polyunsaturated Margarine</ingredient>
+    <ingredient amount="25" units="g">Caster Sugar</ingredient>
+    <ingredient amount="60" units="g" nameInShops="Glace Cherries">Glace cherries, chopped</ingredient>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>WeightWatchers Chilli and Pepper Pasta</name>
+    <source>Page 19 of WeightWatchers Vegetarian Cooking</source>
+    <portions>4</portions>
+    <points>3.5</points>
+    <prepTime>15 minutes</prepTime>
+    <CookingTime>20 minutes</CookingTime> 
+    <ingredient amount="240" units="g" nameInShops="Spaghetti">spaghetti/rigatoni/penne or conchiglie</ingredient>
+    <ingredient amount="60" units="g" nameInShops="Low Fat Cheddar Cheese">Low-Fat vegetarian cheddar cheese</ingredient>
+    <ingredient amount="1" units="tbsp">Olive Oil</ingredient>
+    <ingredient amount="1">Onions</ingredient>
+    <ingredient amount="2">Garlic Cloves</ingredient>
+    <ingredient amount="2" nameInShops="Red Chillis">Large Red Chillis</ingredient>
+    <ingredient amount="1">Red Peppers</ingredient>
+    <ingredient amount="2">Yellow Peppers</ingredient>
+    <ingredient amount="2">Courgettes</ingredient>
+    <ingredient amount="630" units="g" nameInShops="Chopped Tomatoes">Can and a half of Chopped Tomaotoes</ingredient>
+    <ingredient amount="2" units="tbsp">Tomato Puree</ingredient>
+    <ingredient amount="2" units="tbsp" nameInShops="Fresh Basil">Shredded fresh basil</ingredient>
+    <ingredient amount="1" units="pinch">Salt and Pepper</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>WeightWatchers Creamy Quorn Passanda</name>
+    <source>Page 7 of WeightWatchers Spicy and Speedy</source>
+    <portions>4</portions>
+    <points>8</points>
+    <prepAndCookingTime>15 minutes</prepAndCookingTime>
+    <ingredient amount="4">Quorn Fillets</ingredient>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="4">Shallots</ingredient>
+    <ingredient amount="2" units="tsp">Garlic Puree</ingredient>
+    <ingredient amount="2" units="tsp">Ground Coriander</ingredient>
+    <ingredient amount="4" units="pinch" nameInShops="Turmeric">Ground Turmeric</ingredient>
+    <ingredient amount="1" units="tsp" nameInShops="Cumin">Ground Cumin</ingredient>
+    <ingredient amount="1" units="tsp">Mild Curry Powder</ingredient>
+    <ingredient amount="8" units="tsp">Ground Almonds</ingredient>
+    <ingredient amount="8" units="tbsp" lowFat="1" nameInShops="Creme Fraiche">Half Fat Creme Fraiche</ingredient>
+    <ingredient amount="1" units="pinch">Salt and Pepper</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>WeightWatchers Fiery Squash Cakes</name>
+    <source>Page 19 of WeightWatchers Spicy and Speedy</source>
+    <portions>2</portions>
+    <points>1.5</points>
+    <prepAndCookingTime>30 minutes</prepAndCookingTime>
+    <ingredient amount="200" units="g">Butternut Squash</ingredient>
+    <ingredient amount="200" units="g">Potatoes</ingredient>
+    <ingredient amount="1">Eggs</ingredient>
+    <ingredient amount="0.25" units="tsp">Ground Coriander</ingredient>
+    <ingredient amount="0.25" units="tsp">Ground Allspice</ingredient>
+    <ingredient amount="1" units="tbsp">Fresh Coriander</ingredient>
+    <ingredient amount="2">Spring Onions</ingredient>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="1" units="pinch">Dried Chilli Flakes</ingredient>
+    <ingredient amount="1" units="tbsp">White Wine Vinegar</ingredient>
+    <ingredient amount="1" units="tsp">Artificial Sweetner</ingredient>
+    <ingredient amount="2" units="tbsp">Tomato Puree</ingredient>
+    <ingredient amount="1" units="pinch">Salt and Pepper</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>WeightWatchers Seven Spice Beans</name>
+    <source>Page 50 of WeightWatchers Spicy and Speedy</source>
+    <portions>2</portions>
+    <points>1.5</points>
+    <prepAndCookingTime>10 minutes</prepAndCookingTime>
+    <ingredient amount="150" units="g">Frozen Soya Beans</ingredient>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="1">Garlic Cloves</ingredient>
+    <ingredient amount="1" nameInShops="Red Chillis">Red chilli, sliced</ingredient>
+    <ingredient amount="2">Spring Onions</ingredient>
+    <ingredient amount="0.5" units="tsp">Thai 7 Spice</ingredient>
+    <ingredient amount="0.5" nameInShops="Lime">Juice of half a lime</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>WeightWatchers Spicy Tostandas</name>
+    <source>Page 55 of WeightWatchers Spicy and Speedy</source>
+    <portions>4</portions>
+    <points>5</points>
+    <prepAndCookingTime>17 minutes</prepAndCookingTime>
+    <ingredient amount="4">Wheat Tortillas</ingredient>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="1">Courgettes</ingredient>
+    <ingredient amount="125" units="g">Frozen Mixed Peppers</ingredient>
+    <ingredient amount="400" units="g" nameInShops="Kidney beans">Canned red kidney beans, drained</ingredient>
+    <ingredient amount="1.5" units="tbsp">Tomato Puree</ingredient>
+    <ingredient amount="1" units="tsp">Chilli Powder</ingredient>
+    <ingredient amount="1" units="tsp">Smoked Paprika</ingredient>
+    <ingredient amount="50" units="g" nameInShops="Low Fat Cheddar Cheese">Low-Fat vegetarian cheddar cheese</ingredient>
+    <ingredient amount="1" nameInShops="Avocado">Large Avocado, peeled and sliced</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>WeightWatchers Easy Naan</name>
+    <source>Page 63 of WeightWatchers Spicy and Speedy</source>
+    <portions>6</portions>
+    <points>3.5</points>
+    <prepAndCookingTime>24 minutes</prepAndCookingTime>
+    <ingredient amount="1" units="squirt">Low Fat Cooking Spray</ingredient>
+    <ingredient amount="125" units="ml">Semi-Skimmed Milk</ingredient>
+    <ingredient amount="1">Eggs</ingredient>
+    <ingredient amount="2" units="tsp">Caster Sugar</ingredient>
+    <ingredient amount="1" units="tbsp" lowFat="1" nameInShops="Yogurt">Plain Yogurt</ingredient>
+    <ingredient amount="300" units="g">Plain Flour</ingredient>
+    <ingredient amount="1" units="pinch">Salt</ingredient>
+    <ingredient amount="0.5" units="tsp">Bicarbonate of Soda</ingredient>
+    <ingredient amount="1" units="tsp">Black Onion Seeds</ingredient>
+    <ingredient amount="3">Garlic Cloves</ingredient>
+    <ingredient amount="12.5" units="g">Fresh Coriander</ingredient>
+    <ingredient amount="40" units="g" nameInShops="Polyunsaturated Margarine">Low Fat Polyunsaturated Margarine</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>Pad Thai</name>
+    <source>Page 96 of Vegetarian Meals in Minutes magazine</source>
+    <portions>4</portions>
+    <points>?</points>
+    <prepTime>15 minutes</prepTime>
+    <cookingTime>15 minutes</cookingTime> 
+    <ingredient amount="375" units="g" nameInShops="Dried Rice Noodles">Dried Rice noodles (5mm wide)</ingredient>
+    <ingredient amount="250" units="g">Firm Tofu</ingredient>
+    <ingredient amount="60" units="ml">Peanut Oil</ingredient>
+    <ingredient amount="2" nameInShops="Garlic Cloves">Crushed garlic cloves</ingredient>
+    <ingredient amount="1" units="tbsp" nameInShops="Root Ginger">grated root ginger</ingredient>
+    <ingredient amount="2" units="tsp" nameInShops="Sambal Oelek">Sambal Oelek (Chilli paste)</ingredient>
+    <ingredient amount="1" units="stalk" nameInShops="Lemongrass">Lemongrass, sliced thinly</ingredient>
+    <ingredient amount="240" units="g" nameInShops="Carrots">Carrots, sliced thinly</ingredient>
+    <ingredient amount="2">Courgettes</ingredient>
+    <ingredient amount="3">Eggs</ingredient>
+    <ingredient amount="135" units="g">Raw Sugar</ingredient>
+    <ingredient amount="60" units="ml">Light Soy Sauce</ingredient>
+    <ingredient amount="180" units="ml">Mild Chilli Sauce</ingredient>
+    <ingredient amount="160" units="g">Bean Sprouts</ingredient>
+    <ingredient amount="2" units="tbsp" nameInShops="Fresh Coriander">Coarsely Chopped fresh coriander</ingredient>
+    <ingredient amount="75" units="g" nameInShops="Unsalted Roasted Peanuts">Unsalted roasted peanuts, chopped coarsely</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>Satay Tofu</name>
+    <source>Page 74 of Vegetarian Meals in Minutes magazine</source>
+    <portions>4</portions>
+    <points>?</points>
+    <prepTime>10 minutes</prepTime>
+    <cookingTime>20 minutes</cookingTime> 
+    <ingredient amount="400" units="g">Jasmine Rice</ingredient>
+    <ingredient amount="80" units="ml">Vegetable Oil</ingredient>
+    <ingredient amount="900" units="g">Firm Tofu</ingredient>
+    <ingredient amount="1" units="tbsp">Peanut Oil</ingredient>
+    <ingredient amount="1" nameInShops="Garlic Cloves">Crushed garlic cloves</ingredient>
+    <ingredient amount="2" units="tsp" nameInShops="Root Ginger">Grated root ginger</ingredient>
+    <ingredient amount="1">Onions</ingredient>
+    <ingredient amount="70" units="g">Smooth Peanut Butter</ingredient>
+    <ingredient amount="60" units="ml">Light Soy Sauce</ingredient>
+    <ingredient amount="60" units="ml">Sweet Chilli Sauce</ingredient>
+    <ingredient amount="125" units="ml" nameInShops="Water">Hot Water</ingredient>
+    <ingredient amount="400" units="ml" nameInShops="Coconut Milk">Can coconut milk</ingredient>
+    <ingredient amount="1" units="tbsp" nameInShops="Fresh Coriander">Coarsely Chopped fresh coriander</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>Malaysian Vegetable Curry</name>
+    <source>Page 74 of Vegetarian Meals in Minutes magazine</source>
+    <portions>4</portions>
+    <points>?</points>
+    <prepTime>15 minutes</prepTime>
+    <cookingTime>15 minutes</cookingTime> 
+    <ingredient amount="2" nameInShops="Red Chillis">Red chilli, chopped coarsely</ingredient>
+    <ingredient amount="2" units="tsp" nameInShops="Root Ginger">Grated root ginger</ingredient>
+    <ingredient amount="3" nameInShops="Garlic Cloves">Garlic cloves, quartered</ingredient>
+    <ingredient amount="80" units="g" nameInShops="Fresh Coriander">Coarsely chopped coriander root</ingredient>
+    <ingredient amount="0.5" units="tsp" nameInShops="Turmeric">Ground Turmeric</ingredient>
+    <ingredient amount="0.5" units="tsp" nameInShops="Cinnamon">Ground Cinnamon</ingredient>
+    <ingredient amount="3" units="tsp" nameInShops="Cumin">Ground Cumin</ingredient>
+    <ingredient amount="1" units="tsp" nameInShops="Coriander Seeds">Coriander seeds, crushed</ingredient>
+    <ingredient amount="400" units="g" nameInShops="Peeled Tomatoes">Can whole peeled tomatoes</ingredient>
+    <ingredient amount="400" units="ml" nameInShops="Coconut Milk">Can coconut milk</ingredient>
+    <ingredient amount="6" nameInShops="Kaffir Lime Leaves">Kaffir Lime leaves, shredded finely</ingredient>
+    <ingredient amount="1" units="tbsp">Raw Sugar</ingredient>
+    <ingredient amount="400" units="g" nameInShops="Pumpkin">Coarsely chopped pumpkin</ingredient>
+    <ingredient amount="600" units="g" nameInShops="Potatoes">Potatoes, chopped coarsely</ingredient>
+    <ingredient amount="200" units="g" nameInShops="Green Beans">Fine green beans, chopped coarsely</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>Potatoes in Creamy Onion Sauce</name>
+    <source>Page 55 of World Vegetarian Classics</source>
+    <portions>4</portions>
+    <points>?</points>
+    <prepAndCookingTime>? minutes</prepAndCookingTime>
+    <ingredient amount="2" units="tbsp">Sunflower Oil</ingredient>
+    <ingredient amount="3">Onions</ingredient>
+    <ingredient amount="1" nameInShops="Garlic Cloves">Garlic clove, crushed</ingredient>
+    <ingredient amount="2" nameInShops="Red Chillis">Fresh yellow habanero chilli, de-seeded and chopped (or fresh red chillies, to taste)</ingredient>
+    <ingredient amount="1" nameInShops="Cream Crackers">Cream crackers, lightly crushed</ingredient>
+    <ingredient amount="3" units="tbsp">Cottage Cheese</ingredient>
+    <ingredient amount="250" units="ml">Evaporated Milk</ingredient>
+    <ingredient amount="1.5" units="tbsp" nameInShops="Lemon">lemon juice</ingredient>
+    <ingredient amount="1000" units="g">New Potatoes</ingredient>
+    <ingredient amount="4">Eggs</ingredient>
+    <ingredient amount="1">Jar of Black Olives</ingredient>
+    <ingredient amount="1">Lettuce</ingredient>
+    <ingredient amount="3" nameInShops="Tomatoes">Sliced tomatoes</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>Murkha Dhal</name>
+    <source>Page 460 of "1000 Vegetarian Recipies"</source>
+    <portions>4</portions>
+    <points>?</points>
+    <prepTime>5 minutes</prepTime>
+    <cookingTime>55 minutes</cookingTime>
+    <ingredient amount="60" units="g">Butter</ingredient>
+    <ingredient amount="2" units="tsp">Mustard Seeds</ingredient>
+    <ingredient amount="1" nameInShops="Onions">Onion, chopped finely</ingredient>
+    <ingredient amount="2" nameInShops="Garlic Cloves">Garlic cloves, chopped finely</ingredient>
+    <ingredient amount="1" units="tbsp" nameInShops="Root Ginger">Grated root ginger</ingredient>
+    <ingredient amount="1" units="tsp" nameInShops="Turmeric">Ground Turmeric</ingredient>
+    <ingredient amount="2" nameInShops="Green Chillis">Green chilli, de-seeded and chopped finely</ingredient>
+    <ingredient amount="225" units="g">Red Lentils</ingredient>
+    <ingredient amount="1000" units="ml">Water</ingredient>
+    <ingredient amount="300" units="ml" nameInShops="Coconut Milk">Can coconut milk</ingredient>
+    <ingredient amount="1" units="tsp">Salt</ingredient>
+  </recipe>
+
 </recipes>
