@@ -39,6 +39,7 @@
   <category name="Bread">
     <item>Wholemeal Pitta Bread</item>
     <item>Wheat Tortillas</item>
+    <item>Burger Buns</item>
   </category>
   <category name="Baking">
     <item>Artificial Sweetner</item>
@@ -63,6 +64,7 @@
     <item>Self-Raising Flour</item>
     <item>Dijon Mustard</item>
     <item>Whole-Grain Mustard</item>
+    <item>English Mustard</item>
     <item>Mild curry paste</item>
     <item>Eggs</item>
     <item>Cornflour</item>
@@ -74,9 +76,11 @@
     <item>Vanilla Extract</item>
     <item>Caster Sugar</item>
     <item>Raw Sugar</item>
+    <item>Demerara Sugar</item>
     <item>Cream Of Tartar</item>
     <item>Glace Cherries</item>
     <item>Black Onion Seeds</item>
+    <item>Porridge Oats</item>
     <item>Unsalted Roasted Peanuts</item>
   </category>
   <category name="Dairy">
@@ -151,6 +155,7 @@
     <item>Salad</item>
   </category>
   <category name="Herbs and Spices">
+    <item>Mixed Herbs</item>
     <item>Ground Allspice</item>
     <item>Thai 7 Spice</item>
     <item>Root Ginger</item>
@@ -199,10 +204,12 @@
   </category>
   <category name="Bottles, Sauces, Pots, Packs and Tins">
     <item>Chopped Tomatoes with Onion and Herbs</item> 
+    <item>Chopped Tomatoes</item> 
     <item>Coconut Milk</item>
     <item>Peeled Tomatoes</item>
     <item>Sun Dried Tomato Paste</item>
     <item>Tomato Puree</item>
+    <item>Tomato Ketchup</item>
     <item>Pepperdew Peppers</item>
     <item>Sherry Vinegar</item>
     <item>Balsamic Vinegar</item>
@@ -223,12 +230,16 @@
     <item>Cream Crackers</item>
     <item>Evaporated Milk</item>
     <item>Jar of Black Olives</item>
+    <item>Worcestershire Sauce</item>
   </category>
   <category name="Frozen">
     <item>Quorn Beef Style Pieces</item>
     <item>Quorn Fillets</item>
     <item>Frozen Soya Beans</item>
     <item>Frozen Mixed Peppers</item>
+  </category>
+  <category name="Meat">
+    <item>Minced Beef</item>
   </category>
 
   <regularItem units="pack">Bread</regularItem>
@@ -307,6 +318,7 @@
     <ingredient amount="1" units="tsp">Thyme Leaves</ingredient>
     <ingredient amount="6" nameInShops="Cherry Tomatoes">Cherry Tomatoes, Halved</ingredient>
     <ingredient amount="2" units="tsp" nameInShops="Veggie Parmesan">Veggie Parmesan, grated</ingredient>
+    <ingredient amount="40" units="g" nameInShops="Mature Cheddar Cheese">Vegetarian Mature half-fat Cheddar, grated</ingredient>
   </recipe>
   <recipe>
     <name>WeightWatchers Leek and Mushroom Pie</name>
@@ -905,6 +917,45 @@
     <ingredient amount="1000" units="ml">Water</ingredient>
     <ingredient amount="300" units="ml" nameInShops="Coconut Milk">Can coconut milk</ingredient>
     <ingredient amount="1" units="tsp">Salt</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>Mums Burgers</name>
+    <source>Mums hand written recipe</source>
+    <portions>4</portions>
+    <points>?</points>
+    <prepTime>20 minutes</prepTime>
+    <cookingTime>10 minutes</cookingTime>
+    <ingredient amount="750" units="g">Minced Beef</ingredient>
+    <ingredient amount="75" units="g">Porridge Oats</ingredient>
+    <ingredient amount="1" nameInShops="Onions">Onion, chopped finely</ingredient>
+    <ingredient amount="1">Eggs</ingredient>
+    <ingredient amount="1" units="tsp">Mixed Herbs</ingredient>
+    <ingredient amount="8">Burger Buns</ingredient>
+    <ingredient amount="8" units="squirt">Tomato Ketchup</ingredient>
+    <ingredient amount="1" units="pinch">Salt and Pepper</ingredient>
+  </recipe>
+
+  <recipe>
+    <name>Smoky Barbecue Sauce</name>
+    <source>Photocopied recipe from mum</source>
+    <portions>6</portions>
+    <points>?</points>
+    <prepAndCookingTime>40 minutes</prepAndCookingTime>
+    <ingredient amount="25" units="g">Butter</ingredient>
+    <ingredient amount="1" nameInShops="Onions">Onion, chopped finely</ingredient>
+    <ingredient amount="1" nameInShops="Garlic Cloves">Garlic cloves, crushed</ingredient>
+    <ingredient amount="30" units="ml">White Wine Vinegar</ingredient>
+    <ingredient amount="150" units="ml">Vegetable Stock</ingredient>
+    <ingredient amount="30" units="ml">English Mustard</ingredient>
+    <ingredient amount="30" units="ml">Demerara Sugar</ingredient>
+    <ingredient amount="1" nameInShops="Lemon">1 Slice of Lemon</ingredient>
+    <ingredient amount="2">Bay Leaves</ingredient>
+    <ingredient amount="1" units="pinch">Cayenne Pepper</ingredient>
+    <ingredient amount="30" units="ml">Worcestershire Sauce</ingredient>
+    <ingredient amount="400" units="g" nameInShops="Chopped Tomatoes">Tin of Tomatos</ingredient>
+    <ingredient amount="30" units="ml">Tomato Puree</ingredient>
+    <ingredient amount="1" units="pinch">Salt and Pepper</ingredient>
   </recipe>
 
 </recipes>
