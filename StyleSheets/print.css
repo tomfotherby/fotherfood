@@ -12,3 +12,5 @@ table { border-collapse: collapse; }
 body {
   font-size: smaller;
 }
+
+ul.recipeIngredientList {font-size:0.7em;}

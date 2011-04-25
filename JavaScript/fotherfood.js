@@ -23,7 +23,7 @@
 var xmlDoc; 
 
 var CategoryArray    = new Array();          // List of Food Categories (e.g. baking, drinks, veg, etc)
-var NoNeedToBuyItemArray = new Array();          // List of items that we don't need to shop for (e.g. water)
+var NoNeedToBuyItemArray = new Array();      // List of items that we don't need to shop for (e.g. water)
 var RecipeArray      = new Array();          // List of Recipes
 var RegularItemArray = new Array();          // List of generic regular items (e.g. milk, eggs, fruit)
 var theShoppingList  = new ShoppingList();   // The shopping list
@@ -266,13 +266,21 @@ function modifyRegularItemsInShoppingList(ingredientName)
 // Fill the "ShoppingList" DIV with a HTML table containing the current contents of the shopping list
 function DisplayShoppingList()
 {
-
   // Format the recipes in the shopping list
   var recipeText = "";
   for (var i in RecipeArray) {
-    var recipe = RecipeArray[i];
-    if (recipe.numWanted > 0)
-      recipeText += "<li>" + recipe.name + " <i>(" + recipe.source + ")</i> - Portions: " + (recipe.numWanted*recipe.numOfPortions) + ", Points: " + recipe.weightWatcherPoints + ".";
+      var recipe = RecipeArray[i];
+      if (recipe.numWanted > 0) {
+	  recipeText += "<li>" + recipe.name + " <i>(" + recipe.source + ")</i> - Portions: " + (recipe.numWanted*recipe.numOfPortions) + ", Points: " + recipe.weightWatcherPoints + ".";
+	  var recipeIngredientList = "";
+	  for (var j in recipe.ingredientList) {
+	      var repItem = recipe.ingredientList[j];
+	      recipeIngredientList += repItem.amount+repItem.units+" "+repItem.nameInShop+", ";
+	  }
+	  // Remove trailing comma, then add full-stop
+	  recipeIngredientList = recipeIngredientList.slice(0, -2)+".";
+	  recipeText += "<ul class='recipeIngredientList'>\n<li>"+recipeIngredientList+"</ul>";
+      }
   }
 
   theShoppingList.sort();
