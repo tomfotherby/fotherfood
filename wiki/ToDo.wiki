@@ -10,6 +10,7 @@
  * Break recipes into a Main and Dessert section.
  * Persistant storage
   * UI to add new recipes 
+  * Have a pantry to remember what supplies we already have
   * Add a rating system so you can store which recipes are the favourites
  * Format recipes according to a mircoformats standard: http://microformats.org/wiki/recipe
  * For Future releases:
