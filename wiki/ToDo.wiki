@@ -8,6 +8,9 @@
  * ~~Work out how to do a "light" version of a item. e.g. light condensed milk.~~ _(done 21/Feb/09)_
  * Work out how to do alternative ingredients. E.g. Tagliatelle instead of Bucatini in Mushroom Carbonara.
  * Break recipes into a Main and Dessert section.
+ * Persistant storage
+  * UI to add new recipes 
+  * Add a rating system so you can store which recipes are the favourites
  * Format recipes according to a mircoformats standard: http://microformats.org/wiki/recipe
  * For Future releases:
   * Have a Tesco Express CSS - No titles, no units
