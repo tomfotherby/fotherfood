@@ -1,0 +1,20 @@
+# Fotherfood ToDo List #
+
+  * Detect identical ingredients
+    * Ensure plural versions of ingredients are the same as the non plural ingredient
+    * Handle different unit types of the same ingredient.
+  * Allow optional ingredients: Coriander in Spicy Spinach Cannelloni.
+  * ~~Work out how to do a "light" version of a item. e.g. light condensed milk.~~ _(done 21/Feb/09)_
+  * Work out how to do alternative ingredients. E.g. Tagliatelle instead of Bucatini in Mushroom Carbonara.
+  * Break recipes into a Main and Dessert section.
+  * Persistant storage
+    * UI to add new recipes
+    * Have a pantry to remember what supplies we already have
+    * Add a rating system so you can store which recipes are the favourites
+  * Format recipes according to a mircoformats standard: http://microformats.org/wiki/recipe
+  * For Future releases:
+    * Have a Tesco Express CSS - No titles, no units
+    * Include a picture of each recipe
+    * Give each recipe a price
+    * Have method for searching for quick recipes or cheap recipes
+    * Link with Tesco.com to automatically add to shopping basket
